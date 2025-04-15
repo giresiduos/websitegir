@@ -174,3 +174,7 @@ layer(base);
 .dark .about-swiper .swiper-button-next {
   color: var(--color-primary);
 }
+
+.about-swiper .swiper-wrapper {
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}

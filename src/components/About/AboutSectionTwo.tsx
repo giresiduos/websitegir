@@ -1,7 +1,7 @@
 "use client";
 import Image from "next/image";
 import { Swiper, SwiperSlide } from 'swiper/react';
-import { Autoplay, Pagination, Navigation } from 'swiper/modules';
+import { Autoplay, Pagination, Navigation, EffectFade } from 'swiper/modules';
 import 'swiper/css';
 import 'swiper/css/pagination';
 import 'swiper/css/navigation';
@@ -42,12 +42,13 @@ const slidesData = [
 
 const AboutSectionTwo = () => {
   return (
-    <section className="pt-20">
+    <section className="pt-20" id="funcionamento">
       <div className="container">
         <div className="border-b border-body-color/[.15] pb-16 dark:border-white/[.15] md:pb-20 lg:pb-28">
           <SectionTitle
             title="Simplicidade, automação e resultados reais."
             center
+            width="800px"
             mb="10px"
           />
 
@@ -55,16 +56,20 @@ const AboutSectionTwo = () => {
             spaceBetween={30}
             slidesPerView={1}
             centeredSlides={true}
-            // autoplay={{
-            //   delay: 2500,
-            //   disableOnInteraction: false,
-            // }}
+            speed={800}
+            cssMode={true}
+            autoplay={{
+              delay: 6000,
+              disableOnInteraction: false,
+              waitForTransition: true,
+              pauseOnMouseEnter: true
+            }}
             pagination={{
               clickable: true,
               dynamicBullets: true,
             }}
             navigation={true}
-            modules={[Autoplay, Pagination, Navigation]}
+            modules={[Autoplay, Pagination, Navigation, EffectFade]}
             className="about-swiper"
           >
             {slidesData.map(data=>(
@@ -96,14 +101,14 @@ const AboutSectionTwo = () => {
             ))}
           </Swiper>
 
-          <div className="flex flex-col items-center justify-center space-y-4 sm:flex-row sm:space-x-4 sm:space-y-0 mt-15">
-            <Link
-              href="https://nextjstemplates.com/templates/saas-starter-startup"
-              className="rounded-xs bg-primary px-25 py-6 text-xl font-semibold text-white duration-300 ease-in-out hover:bg-primary/80"
-            >
-              Solicitar Demonstração Agora
-            </Link>
-          </div>
+          <div className="flex flex-col items-center justify-center space-y-4 sm:flex-row sm:space-x-4 sm:space-y-0 mt-15 w-full sm:w-auto">
+          <Link
+            href="https://api.whatsapp.com/send?1=pt_BR&phone=5588998611658"
+            className="rounded-xs bg-primary px-10 py-6 text-xl font-semibold text-white duration-300 ease-in-out hover:bg-primary/80 w-full sm:w-auto text-center"
+          >
+            Solicitar Demonstração Agora
+          </Link>
+        </div>
         </div>
       </div>
     </section>

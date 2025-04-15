@@ -5,12 +5,13 @@ import featuresData from "./featuresData";
 const Features = () => {
   return (
     <>
-      <section id="features" className="pt-20">
+      <section id="diferenciais" className="pt-20">
         <div className="container">
           <div className="border-b border-body-color/[.15] pb-16 dark:border-white/[.15] md:pb-20 lg:pb-28">
             <SectionTitle
               title="Por que a GIR é a escolha certa?"
               center
+              width="800px"
               mb="70px"
             />
 

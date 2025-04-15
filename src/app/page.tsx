@@ -6,14 +6,14 @@ import ScrollUp from "@/components/Common/ScrollUp";
 import Contact from "@/components/Contact";
 import Features from "@/components/Features";
 import Hero from "@/components/Hero";
-import Pricing from "@/components/Pricing";
+import Solutions from "@/components/Solutions";
 import Testimonials from "@/components/Testimonials";
-import Video from "@/components/Video";
+import AnimatedSection from "@/components/Common/AnimatedSection";
 import { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "Free Next.js Template for Startup and SaaS",
-  description: "This is Home for Startup Nextjs Template",
+  title: "Home - GIR",
+  // description: "This is Home for Startup Nextjs Template",
   // other metadata
 };
 
@@ -22,15 +22,31 @@ export default function Home() {
     <>
       <ScrollUp />
       <Hero />
-      <Features />
-      <AboutSectionTwo />
-      <Pricing />
-      <Testimonials />
-      {/* <Video /> */}
-      {/* <AboutSectionOne /> */}
-      {/* <Brands /> */}
-      <Blog />
-      <Contact />
+
+      <AnimatedSection>
+        <Features />
+      </AnimatedSection>
+
+      <AnimatedSection>
+        <AboutSectionTwo />
+      </AnimatedSection>
+
+      <AnimatedSection>
+        <Solutions />
+      </AnimatedSection>
+
+      {/* <AnimatedSection>
+        <Testimonials />
+      </AnimatedSection> */}
+
+      <AnimatedSection>
+        <Blog />
+      </AnimatedSection>
+
+      {/* <AnimatedSection> 
+        <Contact />
+      </AnimatedSection> */}
+      {/* <Features /> */}
     </>
   );
 }

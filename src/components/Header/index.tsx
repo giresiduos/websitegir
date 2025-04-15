@@ -16,15 +16,20 @@ const Header = () => {
   // Sticky Navbar
   const [sticky, setSticky] = useState(false);
   const handleStickyNavbar = () => {
-    if (window.scrollY >= 80) {
-      setSticky(true);
-    } else {
-      setSticky(false);
+    if (typeof window !== 'undefined') {
+      if (window.scrollY >= 80) {
+        setSticky(true);
+      } else {
+        setSticky(false);
+      }
     }
   };
   useEffect(() => {
-    window.addEventListener("scroll", handleStickyNavbar);
-  });
+    if (typeof window !== 'undefined') {
+      window.addEventListener("scroll", handleStickyNavbar);
+      return () => window.removeEventListener("scroll", handleStickyNavbar);
+    }
+  }, []);
 
   // submenu handler
   const [openIndex, setOpenIndex] = useState(-1);
@@ -36,7 +41,33 @@ const Header = () => {
     }
   };
 
-  const usePathName = usePathname();
+  const pathname = usePathname();
+
+  // Função para scroll suave
+  const handleSmoothScroll = (e, targetId) => {
+    e.preventDefault();
+    setNavbarOpen(false);
+    
+    if (typeof window === 'undefined') return;
+
+    if (pathname !== "/") {
+      window.location.href = `/#${targetId}`;
+      return;
+    }
+
+    const target = document.getElementById(targetId);
+    if (target) {
+      const offset = sticky ? 80 : 0;
+      const targetPosition = target.getBoundingClientRect().top + window.pageYOffset - offset;
+      
+      window.scrollTo({
+        top: targetPosition,
+        behavior: "smooth"
+      });
+      
+      window.history.pushState(null, null, `#${targetId}`);
+    }
+  };
 
   return (
     <>
@@ -112,18 +143,34 @@ const Header = () => {
                     {menuData.map((menuItem, index) => (
                       <li key={index} className="group relative">
                         {menuItem.path ? (
-                          <Link
-                            href={menuItem.path}
-                            className={`flex py-2 text-base lg:mr-0 lg:inline-flex lg:px-0 lg:py-6 ${
-                              usePathName === menuItem.path
-                                ? "text-primary dark:text-white"
-                                : `text-dark hover:text-primary dark:text-white/70 dark:hover:text-white ${
-                                    !sticky ? "lg:text-white" : ""
-                                  }`
-                            }`}
-                          >
-                            {menuItem.title}
-                          </Link>
+                          menuItem.path.startsWith('#') ? (
+                            <a
+                              href={menuItem.path}
+                              onClick={(e) => handleSmoothScroll(e, menuItem.path.substring(1))}
+                              className={`flex py-2 text-base lg:mr-0 lg:inline-flex lg:px-0 lg:py-6 ${
+                                pathname === "/" && (typeof window !== 'undefined' ? window.location.hash === menuItem.path : false)
+                                  ? "text-primary dark:text-white"
+                                  : `text-dark hover:text-primary dark:text-white/70 dark:hover:text-white ${
+                                      !sticky ? "lg:text-white" : ""
+                                    }`
+                              }`}
+                            >
+                              {menuItem.title}
+                            </a>
+                          ) : (
+                            <Link
+                              href={menuItem.path}
+                              className={`flex py-2 text-base lg:mr-0 lg:inline-flex lg:px-0 lg:py-6 ${
+                                pathname === menuItem.path
+                                  ? "text-primary dark:text-white"
+                                  : `text-dark hover:text-primary dark:text-white/70 dark:hover:text-white ${
+                                      !sticky ? "lg:text-white" : ""
+                                    }`
+                              }`}
+                            >
+                              {menuItem.title}
+                            </Link>
+                          )
                         ) : (
                           <>
                             <p
@@ -167,18 +214,6 @@ const Header = () => {
                 </nav>
               </div>
               <div className="flex items-center justify-end pr-16 lg:pr-0">
-                {/* <Link
-                  href="/signin"
-                  className="text-dark hidden px-7 py-3 text-base font-medium hover:opacity-70 md:block dark:text-white"
-                >
-                  Sign In
-                </Link>
-                <Link
-                  href="/signup"
-                  className="ease-in-up shadow-btn hover:shadow-btn-hover bg-primary hover:bg-primary/90 hidden rounded-xs px-8 py-3 text-base font-medium text-white transition duration-300 md:block md:px-9 lg:px-6 xl:px-9"
-                >
-                  Sign Up
-                </Link> */}
                 <div>
                   <ThemeToggler sticky={sticky} />
                 </div>

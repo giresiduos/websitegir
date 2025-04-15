@@ -5,9 +5,28 @@ import Link from "next/link";
 const Footer = () => {
   return (
     <>
-      <footer className="relative z-10 bg-white pt-16 dark:bg-gray-dark md:pt-20 lg:pt-24">
+      <footer className="relative z-10 bg-white pt-16 dark:bg-gray-dark md:pt-16">
         <div className="container">
-          <div className="-mx-4 flex flex-wrap">
+          <div className="mb-12 w-full flex justify-center"> {/* Container pai centralizado */}
+            <Link href="/" className="inline-block"> {/* Remove mx-auto se estiver usando flex no pai */}
+              <Image
+                src="/images/logo/logo-2.svg"
+                alt="logo"
+                className="w-full dark:hidden" // Aumente max-w para um tamanho maior
+                width={240} // Aumente o width
+                height={60} // Aumente o height proporcionalmente
+                priority // Opcional: carrega a imagem mais rápido
+              />
+              <Image
+                src="/images/logo/logo.svg"
+                alt="logo"
+                className="hidden w-full dark:block" // Mesmo ajuste para o modo dark
+                width={240}
+                height={60}
+              />
+            </Link>
+          </div>
+          {/* <div className="-mx-4 flex flex-wrap">
             <div className="w-full px-4 md:w-1/2 lg:w-4/12 xl:w-5/12">
               <div className="mb-12 max-w-[360px] lg:mb-16">
                 <Link href="/" className="mb-8 inline-block">
@@ -27,8 +46,7 @@ const Footer = () => {
                   />
                 </Link>
                 <p className="mb-9 text-base leading-relaxed text-body-color dark:text-body-color-dark">
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                  Integer lobortis.
+                  Se há um jeito inovador de conviver com o meio ambiente, eu quero aprender e aGIR assim.
                 </p>
                 <div className="flex items-center">
                   <a
@@ -210,29 +228,12 @@ const Footer = () => {
                 </ul>
               </div>
             </div>
-          </div>
+          </div> */}
 
           <div className="h-px w-full bg-linear-to-r from-transparent via-[#D2D8E183] to-transparent dark:via-[#959CB183]"></div>
-          <div className="py-8">
+          <div className="py-6">
             <p className="text-center text-base text-body-color dark:text-white">
-              Template by{" "}
-              <a
-                href="http://uideck.com"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="hover:text-primary"
-              >
-                UIdeck
-              </a>{" "}
-              and{" "}
-              <a
-                href="https://nextjstemplates.com"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="hover:text-primary"
-              >
-                Next.js Templates
-              </a>
+              Copyright ©2025 | GI-TEC - Gestão Inteligente e Tecnologia LTDA - CNPJ 44.302.141/0001-34. Todos os direitos reservados
             </p>
           </div>
         </div>
@@ -259,7 +260,7 @@ const Footer = () => {
                 cx="49.5"
                 cy="49.5"
                 r="49.5"
-                fill="#4A6CF7"
+                fill="#4F9530"
               />
             </mask>
             <g mask="url(#mask0_94:899)">
@@ -365,8 +366,8 @@ const Footer = () => {
                 y2="59.8878"
                 gradientUnits="userSpaceOnUse"
               >
-                <stop stopColor="#4A6CF7" stopOpacity="0.62" />
-                <stop offset="1" stopColor="#4A6CF7" stopOpacity="0" />
+                <stop stopColor="#4F9530" stopOpacity="0.62" />
+                <stop offset="1" stopColor="#4F9530" stopOpacity="0" />
               </linearGradient>
               <linearGradient
                 id="paint1_linear_94:889"
@@ -376,8 +377,8 @@ const Footer = () => {
                 y2="20.668"
                 gradientUnits="userSpaceOnUse"
               >
-                <stop stopColor="#4A6CF7" stopOpacity="0" />
-                <stop offset="1" stopColor="#4A6CF7" stopOpacity="0.51" />
+                <stop stopColor="#4F9530" stopOpacity="0" />
+                <stop offset="1" stopColor="#4F9530" stopOpacity="0.51" />
               </linearGradient>
               <linearGradient
                 id="paint2_linear_94:889"
@@ -387,8 +388,8 @@ const Footer = () => {
                 y2="25.1062"
                 gradientUnits="userSpaceOnUse"
               >
-                <stop stopColor="#4A6CF7" stopOpacity="0.62" />
-                <stop offset="1" stopColor="#4A6CF7" stopOpacity="0" />
+                <stop stopColor="#4F9530" stopOpacity="0.62" />
+                <stop offset="1" stopColor="#4F9530" stopOpacity="0" />
               </linearGradient>
               <linearGradient
                 id="paint3_linear_94:889"
@@ -398,8 +399,8 @@ const Footer = () => {
                 y2="80.6826"
                 gradientUnits="userSpaceOnUse"
               >
-                <stop stopColor="#4A6CF7" stopOpacity="0" />
-                <stop offset="1" stopColor="#4A6CF7" stopOpacity="0.51" />
+                <stop stopColor="#4F9530" stopOpacity="0" />
+                <stop offset="1" stopColor="#4F9530" stopOpacity="0.51" />
               </linearGradient>
               <linearGradient
                 id="paint4_linear_94:889"
@@ -409,8 +410,8 @@ const Footer = () => {
                 y2="58.2156"
                 gradientUnits="userSpaceOnUse"
               >
-                <stop stopColor="#4A6CF7" stopOpacity="0.62" />
-                <stop offset="1" stopColor="#4A6CF7" stopOpacity="0" />
+                <stop stopColor="#4F9530" stopOpacity="0.62" />
+                <stop offset="1" stopColor="#4F9530" stopOpacity="0" />
               </linearGradient>
               <linearGradient
                 id="paint5_linear_94:889"
@@ -420,8 +421,8 @@ const Footer = () => {
                 y2="41.6598"
                 gradientUnits="userSpaceOnUse"
               >
-                <stop stopColor="#4A6CF7" stopOpacity="0" />
-                <stop offset="1" stopColor="#4A6CF7" stopOpacity="0.51" />
+                <stop stopColor="#4F9530" stopOpacity="0" />
+                <stop offset="1" stopColor="#4F9530" stopOpacity="0.51" />
               </linearGradient>
             </defs>
           </svg>
