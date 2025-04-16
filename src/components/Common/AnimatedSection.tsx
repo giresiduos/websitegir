@@ -12,7 +12,7 @@ interface AnimatedSectionProps {
 export default function AnimatedSection({
   children,
   delay = 0.2,
-  duration = 0.6
+  duration = 0.6,
 }: AnimatedSectionProps) {
   const [isVisible, setIsVisible] = useState(false);
   const ref = useRef<HTMLDivElement>(null);
@@ -29,7 +29,7 @@ export default function AnimatedSection({
       },
       {
         rootMargin: "-100px", // Começa a animar 100px antes de entrar na viewport
-      }
+      },
     );
 
     if (ref.current) {
@@ -50,7 +50,7 @@ export default function AnimatedSection({
         transition: `all ${duration}s ease-out`,
         transitionDelay: `${delay}s`,
         opacity: isVisible ? 1 : 0,
-        transform: isVisible ? 'translateY(0)' : 'translateY(20px)'
+        transform: isVisible ? "translateY(0)" : "translateY(20px)",
       }}
     >
       {children}

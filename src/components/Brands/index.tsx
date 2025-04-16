@@ -4,9 +4,13 @@ import brandsData from "./brandsData";
 
 const Brands = () => {
   return (
-    <section className="mt-15"> {/* Adicionei margem superior igual à inferior */}
+    <section className="mt-15">
+      {" "}
+      {/* Adicionei margem superior igual à inferior */}
       <div className="container">
-        <div className="grid grid-cols-1 gap-x-8 gap-y-10 md:grid-cols-2 lg:grid-cols-3"> {/* Usei o mesmo grid que testimonials */}
+        <div className="grid grid-cols-1 gap-x-8 gap-y-10 md:grid-cols-2 lg:grid-cols-3">
+          {" "}
+          {/* Usei o mesmo grid que testimonials */}
           {brandsData.map((brand) => (
             <SingleBrand key={brand.id} brand={brand} />
           ))}
@@ -22,7 +26,9 @@ const SingleBrand = ({ brand }: { brand: Brand }) => {
   const { href, image, imageLight, name } = brand;
 
   return (
-    <div className="flex items-center justify-center p-4"> {/* Ajuste o padding conforme necessário */}
+    <div className="flex items-center justify-center p-4">
+      {" "}
+      {/* Ajuste o padding conforme necessário */}
       <a
         href={href}
         target="_blank"

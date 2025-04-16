@@ -5,31 +5,12 @@ import Link from "next/link";
 const Footer = () => {
   return (
     <>
-      <footer className="relative z-10 bg-white pt-16 dark:bg-gray-dark md:pt-16">
+      <footer className="dark:bg-gray-dark relative z-10 bg-white pt-16 md:pt-16">
         <div className="container">
-          <div className="mb-12 w-full flex justify-center"> {/* Container pai centralizado */}
-            <Link href="/" className="inline-block"> {/* Remove mx-auto se estiver usando flex no pai */}
-              <Image
-                src="/images/logo/logo-2.svg"
-                alt="logo"
-                className="w-full dark:hidden" // Aumente max-w para um tamanho maior
-                width={240} // Aumente o width
-                height={60} // Aumente o height proporcionalmente
-                priority // Opcional: carrega a imagem mais rápido
-              />
-              <Image
-                src="/images/logo/logo.svg"
-                alt="logo"
-                className="hidden w-full dark:block" // Mesmo ajuste para o modo dark
-                width={240}
-                height={60}
-              />
-            </Link>
-          </div>
-          {/* <div className="-mx-4 flex flex-wrap">
-            <div className="w-full px-4 md:w-1/2 lg:w-4/12 xl:w-5/12">
+          <div className="-mx-4 flex flex-wrap">
+            <div className="w-full px-15 sm:px-20 md:w-1/2 lg:px-30 xl:w-5/12">
               <div className="mb-12 max-w-[360px] lg:mb-16">
-                <Link href="/" className="mb-8 inline-block">
+                <Link href="/" className="mb-2 inline-block">
                   <Image
                     src="/images/logo/logo-2.svg"
                     alt="logo"
@@ -45,62 +26,43 @@ const Footer = () => {
                     height={30}
                   />
                 </Link>
-                <p className="mb-9 text-base leading-relaxed text-body-color dark:text-body-color-dark">
-                  Se há um jeito inovador de conviver com o meio ambiente, eu quero aprender e aGIR assim.
+                <p className="text-body-color dark:text-body-color-dark mb-9 text-base leading-relaxed">
+                  Se há um jeito inovador de conviver com o meio ambiente, eu
+                  quero aprender e aGIR assim.
                 </p>
                 <div className="flex items-center">
                   <a
-                    href="/"
+                    href="https://www.instagram.com/giresiduos/?hl=pt-br"
                     aria-label="social-link"
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="mr-6 text-body-color duration-300 hover:text-primary dark:text-body-color-dark dark:hover:text-primary"
+                    className="text-body-color hover:text-primary dark:text-body-color-dark dark:hover:text-primary mr-6 duration-300"
                   >
                     <svg
-                      width="18"
-                      height="18"
-                      viewBox="0 0 22 22"
-                      fill="none"
-                      xmlns="http://www.w3.org/2000/svg"
-                    >
-                      <path
-                        d="M12.1 10.4939V7.42705C12.1 6.23984 13.085 5.27741 14.3 5.27741H16.5V2.05296L13.5135 1.84452C10.9664 1.66676 8.8 3.63781 8.8 6.13287V10.4939H5.5V13.7183H8.8V20.1667H12.1V13.7183H15.4L16.5 10.4939H12.1Z"
-                        fill="currentColor"
-                      />
-                    </svg>
-                  </a>
-                  <a
-                    href="/"
-                    aria-label="social-link"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="mr-6 text-body-color duration-300 hover:text-primary dark:text-body-color-dark dark:hover:text-primary"
-                  >
-                    <svg
-                      width="18"
-                      height="18"
-                      viewBox="0 0 22 22"
+                      width="23"
+                      height="23"
+                      viewBox="0 0 24 24"
                       fill="none"
                       xmlns="http://www.w3.org/2000/svg"
                     >
                       <path
                         fillRule="evenodd"
                         clipRule="evenodd"
-                        d="M13.9831 19.25L9.82094 13.3176L4.61058 19.25H2.40625L8.843 11.9233L2.40625 2.75H8.06572L11.9884 8.34127L16.9034 2.75H19.1077L12.9697 9.73737L19.6425 19.25H13.9831ZM16.4378 17.5775H14.9538L5.56249 4.42252H7.04674L10.808 9.6899L11.4584 10.6039L16.4378 17.5775Z"
+                        d="M3 11C3 7.22876 3 5.34315 4.17157 4.17157C5.34315 3 7.22876 3 11 3H13C16.7712 3 18.6569 3 19.8284 4.17157C21 5.34315 21 7.22876 21 11V13C21 16.7712 21 18.6569 19.8284 19.8284C18.6569 21 16.7712 21 13 21H11C7.22876 21 5.34315 21 4.17157 19.8284C3 18.6569 3 16.7712 3 13V11ZM18 7.5C18 8.32843 17.3284 9 16.5 9C15.6716 9 15 8.32843 15 7.5C15 6.67157 15.6716 6 16.5 6C17.3284 6 18 6.67157 18 7.5ZM14 13C14 14.1046 13.1046 15 12 15C10.8954 15 10 14.1046 10 13C10 11.8954 10.8954 11 12 11C13.1046 11 14 11.8954 14 13ZM16 13C16 15.2091 14.2091 17 12 17C9.79086 17 8 15.2091 8 13C8 10.7909 9.79086 9 12 9C14.2091 9 16 10.7909 16 13Z"
                         fill="currentColor"
                       />
                     </svg>
                   </a>
                   <a
-                    href="/"
+                    href="https://www.youtube.com/channel/UC-8uOEhDpZ6XNDq3UcCG1Xw"
                     aria-label="social-link"
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="mr-6 text-body-color duration-300 hover:text-primary dark:text-body-color-dark dark:hover:text-primary"
+                    className="text-body-color hover:text-primary dark:text-body-color-dark dark:hover:text-primary mr-6 duration-300"
                   >
                     <svg
-                      width="18"
-                      height="14"
+                      width="21"
+                      height="17"
                       viewBox="0 0 18 14"
                       className="fill-current"
                     >
@@ -108,15 +70,15 @@ const Footer = () => {
                     </svg>
                   </a>
                   <a
-                    href="/"
+                    href="https://www.linkedin.com/authwall?trk=bf&trkInfo=AQFZ8D-UyHjczwAAAZF_QjyI2MoYpV_-dtGKWJKdPRKpGroSmxw3w2sZbZZ3H83_SfLMaDl06pDL16m3JaBUE2zL6oQyrpNipjeS-54uuBrdfsnom5pP_n0SvkB8ldtt2mnEzCA=&original_referer=&sessionRedirect=https%3A%2F%2Fwww.linkedin.com%2Fcompany%2Fgestaointeligentederesiduos"
                     aria-label="social-link"
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="text-body-color duration-300 hover:text-primary dark:text-body-color-dark dark:hover:text-primary"
+                    className="text-body-color hover:text-primary dark:text-body-color-dark dark:hover:text-primary duration-300"
                   >
                     <svg
-                      width="17"
-                      height="16"
+                      width="19"
+                      height="18"
                       viewBox="0 0 17 16"
                       className="fill-current"
                     >
@@ -127,117 +89,60 @@ const Footer = () => {
               </div>
             </div>
 
-            <div className="w-full px-4 sm:w-1/2 md:w-1/2 lg:w-2/12 xl:w-2/12">
-              <div className="mb-12 lg:mb-16">
-                <h2 className="mb-10 text-xl font-bold text-black dark:text-white">
-                  Useful Links
-                </h2>
-                <ul>
-                  <li>
-                    <Link
-                      href="/blog"
-                      className="mb-4 inline-block text-base text-body-color duration-300 hover:text-primary dark:text-body-color-dark dark:hover:text-primary"
-                    >
-                      Blog
-                    </Link>
-                  </li>
-                  <li>
-                    <Link
-                      href="/"
-                      className="mb-4 inline-block text-base text-body-color duration-300 hover:text-primary dark:text-body-color-dark dark:hover:text-primary"
-                    >
-                      Pricing
-                    </Link>
-                  </li>
-                  <li>
-                    <Link
-                      href="/about"
-                      className="mb-4 inline-block text-base text-body-color duration-300 hover:text-primary dark:text-body-color-dark dark:hover:text-primary"
-                    >
-                      About
-                    </Link>
-                  </li>
-                </ul>
+            {/* <div className="flex w-full flex-row flex-wrap gap-3 px-15 sm:gap-6 sm:px-20 md:w-1/2 md:justify-end lg:px-30 xl:w-7/12">
+              <div className="">
+                <div className="mb-12 lg:mb-16">
+                  <h2 className="mb-10 text-xl font-bold text-black dark:text-white">
+                    Links
+                  </h2>
+                  <ul>
+                    <li>
+                      <Link
+                        href="/"
+                        className="text-body-color hover:text-primary dark:text-body-color-dark dark:hover:text-primary mb-4 inline-block text-base duration-300"
+                      >
+                        Sobre Nós
+                      </Link>
+                    </li>
+                    <li>
+                      <Link
+                        href="/"
+                        className="text-body-color hover:text-primary dark:text-body-color-dark dark:hover:text-primary mb-4 inline-block text-base duration-300"
+                      >
+                        Soluções
+                      </Link>
+                    </li>
+                    <li>
+                      <Link
+                        href="/"
+                        className="text-body-color hover:text-primary dark:text-body-color-dark dark:hover:text-primary mb-4 inline-block text-base duration-300"
+                      >
+                        Blog
+                      </Link>
+                    </li>
+                    <li>
+                      <Link
+                        href="/"
+                        className="text-body-color hover:text-primary dark:text-body-color-dark dark:hover:text-primary mb-4 inline-block text-base duration-300"
+                      >
+                        Contato
+                      </Link>
+                    </li>
+                  </ul>
+                </div>
               </div>
-            </div>
-
-            <div className="w-full px-4 sm:w-1/2 md:w-1/2 lg:w-2/12 xl:w-2/12">
-              <div className="mb-12 lg:mb-16">
-                <h2 className="mb-10 text-xl font-bold text-black dark:text-white">
-                  Terms
-                </h2>
-                <ul>
-                  <li>
-                    <Link
-                      href="/"
-                      className="mb-4 inline-block text-base text-body-color duration-300 hover:text-primary dark:text-body-color-dark dark:hover:text-primary"
-                    >
-                      TOS
-                    </Link>
-                  </li>
-                  <li>
-                    <Link
-                      href="/"
-                      className="mb-4 inline-block text-base text-body-color duration-300 hover:text-primary dark:text-body-color-dark dark:hover:text-primary"
-                    >
-                      Privacy Policy
-                    </Link>
-                  </li>
-                  <li>
-                    <Link
-                      href="/"
-                      className="mb-4 inline-block text-base text-body-color duration-300 hover:text-primary dark:text-body-color-dark dark:hover:text-primary"
-                    >
-                      Refund Policy
-                    </Link>
-                  </li>
-                </ul>
-              </div>
-            </div>
-
-            <div className="w-full px-4 md:w-1/2 lg:w-4/12 xl:w-3/12">
-              <div className="mb-12 lg:mb-16">
-                <h2 className="mb-10 text-xl font-bold text-black dark:text-white">
-                  Support & Help
-                </h2>
-                <ul>
-                  <li>
-                    <Link
-                      href="/contact"
-                      className="mb-4 inline-block text-base text-body-color duration-300 hover:text-primary dark:text-body-color-dark dark:hover:text-primary"
-                    >
-                      Open Support Ticket
-                    </Link>
-                  </li>
-                  <li>
-                    <Link
-                      href="/"
-                      className="mb-4 inline-block text-base text-body-color duration-300 hover:text-primary dark:text-body-color-dark dark:hover:text-primary"
-                    >
-                      Terms of Use
-                    </Link>
-                  </li>
-                  <li>
-                    <Link
-                      href="/about"
-                      className="mb-4 inline-block text-base text-body-color duration-300 hover:text-primary dark:text-body-color-dark dark:hover:text-primary"
-                    >
-                      About
-                    </Link>
-                  </li>
-                </ul>
-              </div>
-            </div>
-          </div> */}
+            </div> */}
+          </div>
 
           <div className="h-px w-full bg-linear-to-r from-transparent via-[#D2D8E183] to-transparent dark:via-[#959CB183]"></div>
           <div className="py-6">
-            <p className="text-center text-base text-body-color dark:text-white">
-              Copyright ©2025 | GI-TEC - Gestão Inteligente e Tecnologia LTDA - CNPJ 44.302.141/0001-34. Todos os direitos reservados
+            <p className="text-body-color text-center text-base dark:text-white">
+              Copyright ©2025 | GIR - GESTAO E TECNOLOGIA AMBIENTAL - CNPJ
+              44.302.141/0001-34. Todos os direitos reservados
             </p>
           </div>
         </div>
-        <div className="absolute right-0 top-14 z-[-1]">
+        <div className="absolute top-14 right-0 z-[-1]">
           <svg
             width="55"
             height="99"

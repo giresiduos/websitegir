@@ -6,7 +6,7 @@ import { Metadata } from "next";
 import Link from "next/link";
 
 export const metadata: Metadata = {
-  title: "Ebook",
+  title: "Ebook - GIR",
   // description: "This is Blog Details Page for Startup Nextjs Template",
   // other metadata
 };
@@ -20,7 +20,8 @@ const BlogDetailsPage = () => {
             <div className="w-full px-4 lg:w-8/12">
               <div>
                 <h2 className="mb-8 text-3xl leading-tight font-bold text-black sm:text-4xl sm:leading-tight dark:text-white">
-                  Guia Prático - Destinação seletiva de resíduos no seu dia a dia
+                  Guia Prático - Destinação seletiva de resíduos no seu dia a
+                  dia
                 </h2>
                 {/* <div className="border-body-color/10 mb-10 flex flex-wrap items-center justify-between border-b pb-4 dark:border-white/10">
                   <div className="flex flex-wrap items-center">
@@ -103,8 +104,9 @@ const BlogDetailsPage = () => {
                   </div>
                 </div> */}
                 <div>
-                  <p className="text-justify text-body-color mb-10 text-base leading-relaxed font-medium sm:text-lg sm:leading-relaxed lg:text-base lg:leading-relaxed xl:text-lg xl:leading-relaxed">
-                    Mergulhe conosco neste universo da Educação Ambiental, criado para capacitar e conscientizar a todos.
+                  <p className="text-body-color mb-10 text-justify text-base leading-relaxed font-medium sm:text-lg sm:leading-relaxed lg:text-base lg:leading-relaxed xl:text-lg xl:leading-relaxed">
+                    Mergulhe conosco neste universo da Educação Ambiental,
+                    criado para capacitar e conscientizar a todos.
                   </p>
                   <div className="mb-10 w-full overflow-hidden rounded-sm">
                     <div className="relative aspect-97/60 w-full sm:aspect-97/44">
@@ -116,19 +118,32 @@ const BlogDetailsPage = () => {
                       />
                     </div>
                   </div>
-                  <p className="text-justify text-body-color mb-10 text-base leading-relaxed font-medium sm:text-lg sm:leading-relaxed lg:text-base lg:leading-relaxed xl:text-lg xl:leading-relaxed">
-                    A coleta seletiva é uma ação de gerenciamento de resíduos sólidos que consiste na coleta diferenciada de resíduos recicláveis, os quais já foram separados na fonte geradora.  Essa prática, mesmo quando realizada individualmente, permite que os resíduos sólidos coletados possam ser reutilizados ou reciclados, em vez de serem dispostos em lixões ou aterros sanitários.
+                  <p className="text-body-color mb-10 text-justify text-base leading-relaxed font-medium sm:text-lg sm:leading-relaxed lg:text-base lg:leading-relaxed xl:text-lg xl:leading-relaxed">
+                    A coleta seletiva é uma ação de gerenciamento de resíduos
+                    sólidos que consiste na coleta diferenciada de resíduos
+                    recicláveis, os quais já foram separados na fonte geradora.
+                    Essa prática, mesmo quando realizada individualmente,
+                    permite que os resíduos sólidos coletados possam ser
+                    reutilizados ou reciclados, em vez de serem dispostos em
+                    lixões ou aterros sanitários.
                   </p>
-                  <p className="text-justify text-body-color mb-10 text-base leading-relaxed font-medium sm:text-lg sm:leading-relaxed lg:text-base lg:leading-relaxed xl:text-lg xl:leading-relaxed">
-                    O conceito de Lixo Zero refere-se à ideia de que é possível chegar a um ponto em que não haja mais a necessidade de descartar resíduos recicláveis e orgânicos, pois todos os materiais serão reutilizados ou reciclados.  O objetivo é reduzir ao máximo o descarte de resíduos e diminuir o uso de novas matérias-primas, aumentando a eficiência na utilização de recursos e minimizando o impacto ambiental negativo. 
+                  <p className="text-body-color mb-10 text-justify text-base leading-relaxed font-medium sm:text-lg sm:leading-relaxed lg:text-base lg:leading-relaxed xl:text-lg xl:leading-relaxed">
+                    O conceito de Lixo Zero refere-se à ideia de que é possível
+                    chegar a um ponto em que não haja mais a necessidade de
+                    descartar resíduos recicláveis e orgânicos, pois todos os
+                    materiais serão reutilizados ou reciclados. O objetivo é
+                    reduzir ao máximo o descarte de resíduos e diminuir o uso de
+                    novas matérias-primas, aumentando a eficiência na utilização
+                    de recursos e minimizando o impacto ambiental negativo.
                   </p>
-                  <p className="text-justify text-body-color mb-10 text-base leading-relaxed font-medium sm:text-lg sm:leading-relaxed lg:text-base lg:leading-relaxed xl:text-lg xl:leading-relaxed">
-                    A coleta seletiva é uma parte importante na busca pelo Lixo Zero.
+                  <p className="text-body-color mb-10 text-justify text-base leading-relaxed font-medium sm:text-lg sm:leading-relaxed lg:text-base lg:leading-relaxed xl:text-lg xl:leading-relaxed">
+                    A coleta seletiva é uma parte importante na busca pelo Lixo
+                    Zero.
                   </p>
-                  <div className="flex flex-col items-center justify-center space-y-4 sm:flex-row sm:space-x-4 sm:space-y-0">
+                  <div className="flex flex-col items-center justify-center space-y-4 sm:flex-row sm:space-y-0 sm:space-x-4">
                     <Link
                       href="https://drive.google.com/drive/folders/1mAgCaY5-RCbzL9iO6OSEGqC4TUjJwzM3"
-                      className="rounded-xs bg-primary px-8 py-4 text-base font-semibold text-white duration-300 ease-in-out hover:bg-primary/80"
+                      className="bg-primary hover:bg-primary/80 rounded-xs px-8 py-4 text-base font-semibold text-white duration-300 ease-in-out"
                       target="_blank"
                     >
                       Baixar E-book
@@ -316,7 +331,7 @@ const BlogDetailsPage = () => {
                       </svg>
                     </span>
                   </div> */}
-                  
+
                   {/* <div className="items-center justify-between sm:flex">
                     <div className="mb-5">
                       <h4 className="text-body-color mb-3 text-sm font-medium">

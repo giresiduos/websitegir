@@ -16,7 +16,7 @@ const Header = () => {
   // Sticky Navbar
   const [sticky, setSticky] = useState(false);
   const handleStickyNavbar = () => {
-    if (typeof window !== 'undefined') {
+    if (typeof window !== "undefined") {
       if (window.scrollY >= 80) {
         setSticky(true);
       } else {
@@ -25,7 +25,7 @@ const Header = () => {
     }
   };
   useEffect(() => {
-    if (typeof window !== 'undefined') {
+    if (typeof window !== "undefined") {
       window.addEventListener("scroll", handleStickyNavbar);
       return () => window.removeEventListener("scroll", handleStickyNavbar);
     }
@@ -42,13 +42,14 @@ const Header = () => {
   };
 
   const pathname = usePathname();
+  const isHomePage = pathname === "/";
 
   // Função para scroll suave
   const handleSmoothScroll = (e, targetId) => {
     e.preventDefault();
     setNavbarOpen(false);
-    
-    if (typeof window === 'undefined') return;
+
+    if (typeof window === "undefined") return;
 
     if (pathname !== "/") {
       window.location.href = `/#${targetId}`;
@@ -58,13 +59,14 @@ const Header = () => {
     const target = document.getElementById(targetId);
     if (target) {
       const offset = sticky ? 80 : 0;
-      const targetPosition = target.getBoundingClientRect().top + window.pageYOffset - offset;
-      
+      const targetPosition =
+        target.getBoundingClientRect().top + window.pageYOffset - offset;
+
       window.scrollTo({
         top: targetPosition,
-        behavior: "smooth"
+        behavior: "smooth",
       });
-      
+
       window.history.pushState(null, null, `#${targetId}`);
     }
   };
@@ -92,14 +94,14 @@ const Header = () => {
                   alt="logo"
                   width={140}
                   height={30}
-                  className={`${sticky? '' : 'hidden' } w-full dark:hidden`}
+                  className={`${sticky || !isHomePage ? "" : "hidden"} w-full dark:hidden`}
                 />
                 <Image
                   src="/images/logo/logo.svg"
                   alt="logo"
                   width={140}
                   height={30}
-                  className={`${sticky? 'hidden' : '' } w-full dark:block`}
+                  className={`${sticky || !isHomePage ? "hidden" : ""} w-full dark:block`}
                 />
               </Link>
             </div>
@@ -131,11 +133,11 @@ const Header = () => {
                   id="navbarCollapse"
                   className={`navbar border-body-color/50 dark:border-body-color/20 absolute right-0 z-30 w-[250px] rounded border-[.5px] px-6 py-4 duration-300 lg:visible lg:static lg:w-auto lg:border-none lg:!bg-transparent lg:p-0 lg:opacity-100 ${
                     navbarOpen
-                      ? "visibility top-full opacity-100 bg-white dark:bg-dark"
-                      : "invisible top-[120%] opacity-0 bg-white dark:bg-dark"
+                      ? "visibility dark:bg-dark top-full bg-white opacity-100"
+                      : "dark:bg-dark invisible top-[120%] bg-white opacity-0"
                   } ${
-                    sticky 
-                      ? "lg:bg-white dark:lg:bg-dark" 
+                    sticky
+                      ? "dark:lg:bg-dark lg:bg-white"
                       : "lg:bg-transparent dark:lg:bg-transparent"
                   }`}
                 >
@@ -143,29 +145,26 @@ const Header = () => {
                     {menuData.map((menuItem, index) => (
                       <li key={index} className="group relative">
                         {menuItem.path ? (
-                          menuItem.path.startsWith('#') ? (
-                            <a
+                          menuItem.path.startsWith("#") ? (
+                            <Link
                               href={menuItem.path}
-                              onClick={(e) => handleSmoothScroll(e, menuItem.path.substring(1))}
-                              className={`flex py-2 text-base lg:mr-0 lg:inline-flex lg:px-0 lg:py-6 ${
-                                pathname === "/" && (typeof window !== 'undefined' ? window.location.hash === menuItem.path : false)
-                                  ? "text-primary dark:text-white"
-                                  : `text-dark hover:text-primary dark:text-white/70 dark:hover:text-white ${
-                                      !sticky ? "lg:text-white" : ""
-                                    }`
+                              onClick={(e) =>
+                                handleSmoothScroll(
+                                  e,
+                                  menuItem.path.substring(1),
+                                )
+                              }
+                              className={`text-dark hover:text-primary flex py-2 text-base lg:mr-0 lg:inline-flex lg:px-0 lg:py-6 dark:text-white/70 dark:hover:text-white ${
+                                sticky || !isHomePage ? "" : "lg:text-white"
                               }`}
                             >
                               {menuItem.title}
-                            </a>
+                            </Link>
                           ) : (
                             <Link
                               href={menuItem.path}
-                              className={`flex py-2 text-base lg:mr-0 lg:inline-flex lg:px-0 lg:py-6 ${
-                                pathname === menuItem.path
-                                  ? "text-primary dark:text-white"
-                                  : `text-dark hover:text-primary dark:text-white/70 dark:hover:text-white ${
-                                      !sticky ? "lg:text-white" : ""
-                                    }`
+                              className={`text-dark hover:text-primary flex py-2 text-base lg:mr-0 lg:inline-flex lg:px-0 lg:py-6 dark:text-white/70 dark:hover:text-white ${
+                                sticky || !isHomePage ? "" : "lg:text-white"
                               }`}
                             >
                               {menuItem.title}
@@ -175,8 +174,8 @@ const Header = () => {
                           <>
                             <p
                               onClick={() => handleSubmenu(index)}
-                              className={`text-dark hover:text-primary flex cursor-pointer items-center justify-between py-2 text-base dark:text-white/70 dark:hover:text-white lg:mr-0 lg:inline-flex lg:px-0 lg:py-6 ${
-                                !sticky ? "lg:text-white" : ""
+                              className={`text-dark hover:text-primary flex cursor-pointer items-center justify-between py-2 text-base lg:mr-0 lg:inline-flex lg:px-0 lg:py-6 dark:text-white/70 dark:hover:text-white ${
+                                sticky || !isHomePage ? "" : "lg:text-white"
                               }`}
                             >
                               {menuItem.title}
@@ -215,7 +214,7 @@ const Header = () => {
               </div>
               <div className="flex items-center justify-end pr-16 lg:pr-0">
                 <div>
-                  <ThemeToggler sticky={sticky} />
+                  <ThemeToggler sticky={sticky} isHomePage={isHomePage} />
                 </div>
               </div>
             </div>

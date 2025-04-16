@@ -7,7 +7,7 @@ const Features = () => {
     <>
       <section id="diferenciais" className="pt-20">
         <div className="container">
-          <div className="border-b border-body-color/[.15] pb-16 dark:border-white/[.15] md:pb-20 lg:pb-28">
+          <div className="border-body-color/[.15] border-b pb-16 md:pb-20 lg:pb-28 dark:border-white/[.15]">
             <SectionTitle
               title="Por que a GIR é a escolha certa?"
               center
