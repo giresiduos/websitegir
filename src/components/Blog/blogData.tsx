@@ -4,9 +4,9 @@ const blogData: Blog[] = [
   {
     id: 1,
     title: "Guia Prático - Destinação seletiva de resíduos no seu dia a dia",
-    paragraph:[
+    paragraph: [
       "Convidamos você a explorar, neste ebook, um guia completo para o descarte adequado, desde a não geração até a destinação ambientalmente correta. Descubra o impacto positivo que estamos construindo nas comunidades diretamente do Cariri, Ceará - Brasil.",
-      "Mergulhe conosco neste universo da Educação Ambiental"
+      "Mergulhe conosco neste universo da Educação Ambiental",
     ],
     image: "/images/blog/ebook-gir.jpg",
     author: {

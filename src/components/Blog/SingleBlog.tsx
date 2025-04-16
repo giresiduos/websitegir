@@ -7,15 +7,13 @@ const SingleBlog = ({ blog }: { blog: Blog }) => {
   return (
     <>
       <div className="group shadow-one hover:shadow-two dark:bg-dark dark:hover:shadow-gray-dark relative overflow-hidden rounded-xs bg-white duration-300">
-        <Link
-          href="/ebook"
-          className="relative block aspect-37/22 w-full"
-        >
+        <Link href="/ebook" className="relative block aspect-37/22 w-full">
           <span className="bg-primary absolute top-6 right-6 z-20 inline-flex items-center justify-center rounded-full px-4 py-2 text-sm font-semibold text-white capitalize">
             {tags[0]}
           </span>
           <Image src={image} alt="image" fill />
         </Link>
+
         <div className="p-6 sm:p-8 md:px-6 md:py-8 lg:p-8 xl:px-5 xl:py-8 2xl:p-8">
           <h3>
             <Link
@@ -25,11 +23,14 @@ const SingleBlog = ({ blog }: { blog: Blog }) => {
               {title}
             </Link>
           </h3>
-          {paragraph.map(text =>
-            <p key={text} className="border-body-color/10 text-body-color mb-3 border-b pb-4 text-base font-medium dark:border-white/10 text-justify">
+          {paragraph.map((text) => (
+            <p
+              key={text}
+              className="border-body-color/10 text-body-color mb-3 border-b pb-4 text-justify text-base font-medium dark:border-white/10"
+            >
               {text}
             </p>
-          )}
+          ))}
           {/* <div className="flex items-center">
             <div className="border-body-color/10 mr-5 flex items-center border-r pr-5 xl:mr-3 xl:pr-3 2xl:mr-5 2xl:pr-5 dark:border-white/10">
               <div className="mr-4">

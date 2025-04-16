@@ -6,7 +6,7 @@ const SolutionBox = (props: {
 
   return (
     <div className="w-full">
-      <div className="lg:min-h-90 xl:min-h-85 2xl:min-h-75 shadow-three hover:shadow-one dark:bg-gray-dark dark:shadow-two dark:hover:shadow-gray-dark relative z-10 rounded-xs bg-white px-8 py-10">
+      <div className="shadow-three hover:shadow-one dark:bg-gray-dark dark:shadow-two dark:hover:shadow-gray-dark relative z-10 rounded-xs bg-white px-8 py-10 lg:min-h-90 xl:min-h-85 2xl:min-h-75">
         <div className="flex items-center justify-between">
           <h3 className="price mb-2 text-[29px] font-bold text-black dark:text-white">
             {solution}

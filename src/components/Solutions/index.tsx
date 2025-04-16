@@ -8,53 +8,52 @@ import Link from "next/link";
 const solutionsData = [
   {
     id: 1,
-    solution: 'GI-Resíduos',
+    solution: "GI-Resíduos",
     offerList: [
-      'Plataforma completa para gestão integrada de resíduos',
-      'Centralização de dados e processos',
-      'Eficiência na administração dos resíduos gerados'
-    ]
+      "Plataforma completa para gestão integrada de resíduos",
+      "Centralização de dados e processos",
+      "Eficiência na administração dos resíduos gerados",
+    ],
   },
   {
     id: 2,
-    solution: 'GI-Gov',
+    solution: "GI-Gov",
     offerList: [
-      'Solução para órgãos públicos monitorarem resíduos',
-      'Fiscalização eficiente das atividades',
-      'Apoio à gestão ambiental governamental'
-    ]
+      "Solução para órgãos públicos monitorarem resíduos",
+      "Fiscalização eficiente das atividades",
+      "Apoio à gestão ambiental governamental",
+    ],
   },
   {
     id: 3,
-    solution: 'GI-Compliance',
+    solution: "GI-Compliance",
     offerList: [
-      'Sistema para garantir conformidade com legislações ambientais',
-      'Suporte ao cumprimento de legislações ambientais',
-      'Redução de riscos jurídicos e ambientais'
-    ]
+      "Sistema para garantir conformidade com legislações ambientais",
+      "Suporte ao cumprimento de legislações ambientais",
+      "Redução de riscos jurídicos e ambientais",
+    ],
   },
   {
     id: 4,
-    solution: 'Gestão de Resíduos em Eventos',
+    solution: "Gestão de Resíduos em Eventos",
     offerList: [
-      'Solução especializada para eventos de qualquer porte',
-      'Garantia de destinação correta dos resíduos',
-      'Logística eficiente e sustentabilidade certificada'
-    ]
+      "Solução especializada para eventos de qualquer porte",
+      "Garantia de destinação correta dos resíduos",
+      "Logística eficiente e sustentabilidade certificada",
+    ],
   },
   {
     id: 5,
-    solution: 'Pesquisa e Desenvolvimento (P&D)',
+    solution: "Pesquisa e Desenvolvimento (P&D)",
     offerList: [
-      'Consultoria estratégica para inovação em processos sustentáveis',
-      'Criação de novas soluções ambientais',
-      'Desenvolvimento de tecnologias para gestão ambiental'
-    ]
-  }
+      "Consultoria estratégica para inovação em processos sustentáveis",
+      "Criação de novas soluções ambientais",
+      "Desenvolvimento de tecnologias para gestão ambiental",
+    ],
+  },
 ];
 
 const Pricing = () => {
-
   return (
     <section id="produtos" className="relative z-10 py-20">
       <div className="container">
@@ -67,17 +66,14 @@ const Pricing = () => {
 
         <div className="grid grid-cols-1 gap-x-8 gap-y-10 lg:grid-cols-3">
           {solutionsData.slice(0, 3).map((solutionData) => (
-            <SolutionBox
-              key={solutionData.id}
-              solution={solutionData.solution}
-            >
+            <SolutionBox key={solutionData.id} solution={solutionData.solution}>
               {solutionData.offerList.map((offer, idx) => (
                 <OfferList key={idx} text={offer} status="active" />
               ))}
             </SolutionBox>
           ))}
 
-          <div className="lg:col-span-3 grid grid-cols-1 lg:grid-cols-2 gap-x-8 gap-y-10">
+          <div className="grid grid-cols-1 gap-x-8 gap-y-10 lg:col-span-3 lg:grid-cols-2">
             {solutionsData.slice(3, 5).map((solutionData) => (
               <SolutionBox
                 key={solutionData.id}
@@ -91,10 +87,10 @@ const Pricing = () => {
           </div>
         </div>
 
-        <div className="flex flex-col items-center justify-center space-y-4 sm:flex-row sm:space-x-4 sm:space-y-0 mt-15 w-full sm:w-auto">
+        <div className="mt-15 flex w-full flex-col items-center justify-center space-y-4 sm:w-auto sm:flex-row sm:space-y-0 sm:space-x-4">
           <Link
             href="https://api.whatsapp.com/send?1=pt_BR&phone=5588998611658"
-            className="rounded-xs bg-primary px-25 py-6 text-xl font-semibold text-white duration-300 ease-in-out hover:bg-primary/80 w-full sm:w-auto text-center"
+            className="bg-primary hover:bg-primary/80 w-full rounded-xs px-25 py-6 text-center text-xl font-semibold text-white duration-300 ease-in-out sm:w-auto"
           >
             Veja como funciona
           </Link>
