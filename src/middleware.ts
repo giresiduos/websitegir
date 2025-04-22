@@ -2,13 +2,12 @@ import { NextResponse } from "next/server";
 import type { NextRequest } from "next/server";
 
 export function middleware(request: NextRequest) {
-  const allowedPaths = ["/", "/ebook"];
-  const pathname = request.nextUrl.pathname;
-  const isAllowedPath = allowedPaths.find((path) => path === pathname);
-
-  if (!isAllowedPath) {
-    return NextResponse.redirect(new URL("/", request.url));
-  }
+  // const allowedPaths = ["/", "/ebook"];
+  // const pathname = request.nextUrl.pathname;
+  // const isAllowedPath = allowedPaths.find((path) => path === pathname);
+  // if (!isAllowedPath) {
+  //   return NextResponse.redirect(new URL("/", request.url));
+  // }
 }
 
 export const config = {
