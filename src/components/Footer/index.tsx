@@ -7,8 +7,8 @@ const Footer = () => {
     <>
       <footer className="dark:bg-gray-dark relative z-10 bg-white pt-16 md:pt-16">
         <div className="container">
-          <div className="-mx-4 flex flex-wrap">
-            <div className="w-full px-15 sm:px-20 md:w-1/2 lg:px-30 xl:w-5/12">
+          <div className="flex w-full flex-wrap">
+            <div className="w-full px-4 sm:px-5 md:w-2/5 lg:px-6 xl:w-5/12">
               <div className="mb-12 max-w-[360px] lg:mb-16">
                 <Link href="/" className="mb-2 inline-block">
                   <Image
@@ -26,10 +26,12 @@ const Footer = () => {
                     height={30}
                   />
                 </Link>
+
                 <p className="text-body-color dark:text-body-color-dark mb-9 text-base leading-relaxed">
                   Se há um jeito inovador de conviver com o meio ambiente, eu
                   quero aprender e aGIR assim.
                 </p>
+
                 <div className="flex items-center">
                   <a
                     href="https://www.instagram.com/giresiduos/?hl=pt-br"
@@ -86,52 +88,232 @@ const Footer = () => {
                     </svg>
                   </a>
                 </div>
+
+                {/* <div className="mb-8">
+                  <div className="align-center mb-3 flex gap-2">
+                    <svg
+                      width="22px"
+                      height="22px"
+                      viewBox="0 0 24 24"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        d="M12 21C15.5 17.4 19 14.1764 19 10.2C19 6.22355 15.866 3 12 3C8.13401 3 5 6.22355 5 10.2C5 14.1764 8.5 17.4 12 21Z"
+                        stroke="currentColor"
+                        strokeWidth="2"
+                        strokeLinecap="round"
+                        strokeLinejoin="round"
+                      />
+                      <path
+                        d="M12 12C13.1046 12 14 11.1046 14 10C14 8.89543 13.1046 8 12 8C10.8954 8 10 8.89543 10 10C10 11.1046 10.8954 12 12 12Z"
+                        stroke="currentColor"
+                        strokeWidth="2"
+                        strokeLinecap="round"
+                        strokeLinejoin="round"
+                      />
+                    </svg>
+                    <p className="text-body-color dark:text-body-color-dark text-base leading-relaxed">
+                      Av. Ten. Raimundo Rocha, 1639 - Cidade Universitária,
+                      Juazeiro do Norte - CE, 63048-080 Bloco R - Sala 108 UFCA
+                      , Ceará, BR
+                    </p>
+                  </div>
+                  <div className="align-center mb-3 flex gap-2">
+                    <svg
+                      width="22px"
+                      height="22px"
+                      viewBox="0 0 24 24"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        d="M4 7.00005L10.2 11.65C11.2667 12.45 12.7333 12.45 13.8 11.65L20 7"
+                        stroke="currentColor"
+                        strokeWidth="2"
+                        strokeLinecap="round"
+                        strokeLinejoin="round"
+                      />
+                      <rect
+                        x="3"
+                        y="5"
+                        width="18"
+                        height="14"
+                        rx="2"
+                        stroke="currentColor"
+                        strokeWidth="2"
+                        strokeLinecap="round"
+                      />
+                    </svg>
+                    <p className="text-body-color dark:text-body-color-dark text-base leading-relaxed">
+                      gir.eco@gmail.com
+                    </p>
+                  </div>
+                  <div className="align-center flex gap-2">
+                    <svg
+                      width="22px"
+                      height="22px"
+                      viewBox="0 0 24 24"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        d="M3 5.5C3 14.0604 9.93959 21 18.5 21C18.8862 21 19.2691 20.9859 19.6483 20.9581C20.0834 20.9262 20.3009 20.9103 20.499 20.7963C20.663 20.7019 20.8185 20.5345 20.9007 20.364C21 20.1582 21 19.9181 21 19.438V16.6207C21 16.2169 21 16.015 20.9335 15.842C20.8749 15.6891 20.7795 15.553 20.6559 15.4456C20.516 15.324 20.3262 15.255 19.9468 15.117L16.74 13.9509C16.2985 13.7904 16.0777 13.7101 15.8683 13.7237C15.6836 13.7357 15.5059 13.7988 15.3549 13.9058C15.1837 14.0271 15.0629 14.2285 14.8212 14.6314L14 16C11.3501 14.7999 9.2019 12.6489 8 10L9.36863 9.17882C9.77145 8.93713 9.97286 8.81628 10.0942 8.64506C10.2012 8.49408 10.2643 8.31637 10.2763 8.1317C10.2899 7.92227 10.2096 7.70153 10.0491 7.26005L8.88299 4.05321C8.745 3.67376 8.67601 3.48403 8.55442 3.3441C8.44701 3.22049 8.31089 3.12515 8.15802 3.06645C7.98496 3 7.78308 3 7.37932 3H4.56201C4.08188 3 3.84181 3 3.63598 3.09925C3.4655 3.18146 3.29814 3.33701 3.2037 3.50103C3.08968 3.69907 3.07375 3.91662 3.04189 4.35173C3.01413 4.73086 3 5.11378 3 5.5Z"
+                        stroke="currentColor"
+                        strokeWidth="2"
+                        strokeLinecap="round"
+                        strokeLinejoin="round"
+                      />
+                    </svg>
+                    <p className="text-body-color dark:text-body-color-dark text-base leading-relaxed">
+                      +55 (85) 9 9999-9999
+                    </p>
+                  </div>
+                </div> */}
               </div>
             </div>
 
-            {/* <div className="flex w-full flex-row flex-wrap gap-3 px-15 sm:gap-6 sm:px-20 md:w-1/2 md:justify-end lg:px-30 xl:w-7/12">
-              <div className="">
-                <div className="mb-12 lg:mb-16">
-                  <h2 className="mb-10 text-xl font-bold text-black dark:text-white">
-                    Links
-                  </h2>
-                  <ul>
-                    <li>
-                      <Link
-                        href="/"
-                        className="text-body-color hover:text-primary dark:text-body-color-dark dark:hover:text-primary mb-4 inline-block text-base duration-300"
+            <div className="w-full px-4 sm:px-5 md:w-2/5 lg:px-6 xl:w-5/12">
+              <div className="mb-12 lg:mb-16">
+                <h2 className="mb-10 text-xl font-bold text-black dark:text-white">
+                  Contatos
+                </h2>
+                <ul>
+                  <li>
+                    <div className="mb-3 flex gap-3">
+                      <svg
+                        width="22px"
+                        height="22px"
+                        className="mt-1 flex-shrink-0"
+                        viewBox="0 0 24 24"
+                        fill="none"
+                        xmlns="http://www.w3.org/2000/svg"
                       >
-                        Sobre Nós
-                      </Link>
-                    </li>
-                    <li>
-                      <Link
-                        href="/"
-                        className="text-body-color hover:text-primary dark:text-body-color-dark dark:hover:text-primary mb-4 inline-block text-base duration-300"
+                        <path
+                          d="M12 21C15.5 17.4 19 14.1764 19 10.2C19 6.22355 15.866 3 12 3C8.13401 3 5 6.22355 5 10.2C5 14.1764 8.5 17.4 12 21Z"
+                          stroke="currentColor"
+                          strokeWidth="2"
+                          strokeLinecap="round"
+                          strokeLinejoin="round"
+                        />
+                        <path
+                          d="M12 12C13.1046 12 14 11.1046 14 10C14 8.89543 13.1046 8 12 8C10.8954 8 10 8.89543 10 10C10 11.1046 10.8954 12 12 12Z"
+                          stroke="currentColor"
+                          strokeWidth="2"
+                          strokeLinecap="round"
+                          strokeLinejoin="round"
+                        />
+                      </svg>
+                      <p className="text-body-color dark:text-body-color-dark text-justify text-base leading-relaxed">
+                        Av. Ten. Raimundo Rocha, 1639 - Cidade Universitária,
+                        Juazeiro do Norte - CE, 63048-080 Bloco R - Sala 108
+                        UFCA , Ceará, BR
+                      </p>
+                    </div>
+                  </li>
+
+                  <li>
+                    <div className="mb-3 flex items-center gap-3">
+                      <svg
+                        width="22px"
+                        height="22px"
+                        className="flex-shrink-0"
+                        viewBox="0 0 24 24"
+                        fill="none"
+                        xmlns="http://www.w3.org/2000/svg"
                       >
-                        Soluções
-                      </Link>
-                    </li>
-                    <li>
-                      <Link
-                        href="/"
-                        className="text-body-color hover:text-primary dark:text-body-color-dark dark:hover:text-primary mb-4 inline-block text-base duration-300"
+                        <path
+                          d="M4 7.00005L10.2 11.65C11.2667 12.45 12.7333 12.45 13.8 11.65L20 7"
+                          stroke="currentColor"
+                          strokeWidth="2"
+                          strokeLinecap="round"
+                          strokeLinejoin="round"
+                        />
+                        <rect
+                          x="3"
+                          y="5"
+                          width="18"
+                          height="14"
+                          rx="2"
+                          stroke="currentColor"
+                          strokeWidth="2"
+                          strokeLinecap="round"
+                        />
+                      </svg>
+                      <p className="text-body-color dark:text-body-color-dark text-base leading-relaxed">
+                        falecom@gir.eco.br
+                      </p>
+                    </div>
+                  </li>
+
+                  <li>
+                    <div className="mb-3 flex items-center gap-3">
+                      <svg
+                        width="22px"
+                        height="22px"
+                        className="flex-shrink-0"
+                        viewBox="0 0 24 24"
+                        fill="none"
+                        xmlns="http://www.w3.org/2000/svg"
                       >
-                        Blog
-                      </Link>
-                    </li>
-                    <li>
-                      <Link
-                        href="/"
-                        className="text-body-color hover:text-primary dark:text-body-color-dark dark:hover:text-primary mb-4 inline-block text-base duration-300"
-                      >
-                        Contato
-                      </Link>
-                    </li>
-                  </ul>
-                </div>
+                        <path
+                          d="M3 5.5C3 14.0604 9.93959 21 18.5 21C18.8862 21 19.2691 20.9859 19.6483 20.9581C20.0834 20.9262 20.3009 20.9103 20.499 20.7963C20.663 20.7019 20.8185 20.5345 20.9007 20.364C21 20.1582 21 19.9181 21 19.438V16.6207C21 16.2169 21 16.015 20.9335 15.842C20.8749 15.6891 20.7795 15.553 20.6559 15.4456C20.516 15.324 20.3262 15.255 19.9468 15.117L16.74 13.9509C16.2985 13.7904 16.0777 13.7101 15.8683 13.7237C15.6836 13.7357 15.5059 13.7988 15.3549 13.9058C15.1837 14.0271 15.0629 14.2285 14.8212 14.6314L14 16C11.3501 14.7999 9.2019 12.6489 8 10L9.36863 9.17882C9.77145 8.93713 9.97286 8.81628 10.0942 8.64506C10.2012 8.49408 10.2643 8.31637 10.2763 8.1317C10.2899 7.92227 10.2096 7.70153 10.0491 7.26005L8.88299 4.05321C8.745 3.67376 8.67601 3.48403 8.55442 3.3441C8.44701 3.22049 8.31089 3.12515 8.15802 3.06645C7.98496 3 7.78308 3 7.37932 3H4.56201C4.08188 3 3.84181 3 3.63598 3.09925C3.4655 3.18146 3.29814 3.33701 3.2037 3.50103C3.08968 3.69907 3.07375 3.91662 3.04189 4.35173C3.01413 4.73086 3 5.11378 3 5.5Z"
+                          stroke="currentColor"
+                          strokeWidth="2"
+                          strokeLinecap="round"
+                          strokeLinejoin="round"
+                        />
+                      </svg>
+                      <p className="text-body-color dark:text-body-color-dark text-base leading-relaxed">
+                        +55 (88) 9 9861-1658
+                      </p>
+                    </div>
+                  </li>
+                </ul>
               </div>
-            </div> */}
+            </div>
+
+            <div className="w-full px-4 sm:px-5 md:w-1/5 lg:px-6 xl:w-2/12">
+              <div className="mb-12 lg:mb-16">
+                <h2 className="mb-10 text-xl font-bold text-black dark:text-white">
+                  Links
+                </h2>
+                <ul>
+                  <li>
+                    <Link
+                      href="/about"
+                      className="text-body-color hover:text-primary dark:text-body-color-dark dark:hover:text-primary mb-4 inline-block text-base duration-300"
+                    >
+                      Sobre Nós
+                    </Link>
+                  </li>
+                  {/* <li>
+                    <Link
+                      href="/"
+                      className="text-body-color hover:text-primary dark:text-body-color-dark dark:hover:text-primary mb-4 inline-block text-base duration-300"
+                    >
+                      Soluções
+                    </Link>
+                  </li> */}
+                  <li>
+                    <Link
+                      href="/blog"
+                      className="text-body-color hover:text-primary dark:text-body-color-dark dark:hover:text-primary mb-4 inline-block text-base duration-300"
+                    >
+                      Blog
+                    </Link>
+                  </li>
+                  <li>
+                    <Link
+                      href="/contact"
+                      className="text-body-color hover:text-primary dark:text-body-color-dark dark:hover:text-primary mb-4 inline-block text-base duration-300"
+                    >
+                      Contato
+                    </Link>
+                  </li>
+                </ul>
+              </div>
+            </div>
           </div>
 
           <div className="h-px w-full bg-linear-to-r from-transparent via-[#D2D8E183] to-transparent dark:via-[#959CB183]"></div>
