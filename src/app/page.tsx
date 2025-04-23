@@ -1,4 +1,4 @@
-import AboutSectionOne from "@/components/About/AboutSectionOne";
+import AboutSection from "@/components/About/AboutSection";
 import Operation from "@/components/Operation/Operation";
 import Blog from "@/components/Blog";
 import Brands from "@/components/Brands";
@@ -12,7 +12,7 @@ import AnimatedSection from "@/components/Common/AnimatedSection";
 import { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "Home - GIR",
+  title: "GIR",
   // description: "This is Home for Startup Nextjs Template",
   // other metadata
 };
