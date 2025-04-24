@@ -34,6 +34,51 @@ const Footer = () => {
 
                 <div className="flex items-center">
                   <a
+                    href="https://api.whatsapp.com/send?1=pt_BR&phone=5588997289829"
+                    aria-label="social-link"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="text-body-color hover:text-primary dark:text-body-color-dark dark:hover:text-primary mr-6 duration-300"
+                  >
+                    <svg
+                      fill="none"
+                      height="20px"
+                      width="20px"
+                      version="1.1"
+                      id="Icons"
+                      xmlns="http://www.w3.org/2000/svg"
+                      viewBox="0 0 32 32"
+                    >
+                      <path
+                        fillRule="evenodd"
+                        clipRule="evenodd"
+                        fill="currentColor"
+                        d="M17,0C8.7,0,2,6.7,2,15c0,3.4,1.1,6.6,3.2,9.2l-2.1,6.4c-0.1,0.4,0,0.8,0.3,1.1C3.5,31.9,3.8,32,4,32c0.1,0,0.3,0,0.4-0.1
+	l6.9-3.1C13.1,29.6,15,30,17,30c8.3,0,15-6.7,15-15S25.3,0,17,0z M25.7,20.5c-0.4,1.2-1.9,2.2-3.2,2.4C22.2,23,21.9,23,21.5,23
+	c-0.8,0-2-0.2-4.1-1.1c-2.4-1-4.8-3.1-6.7-5.8L10.7,16C10.1,15.1,9,13.4,9,11.6c0-2.2,1.1-3.3,1.5-3.8c0.5-0.5,1.2-0.8,2-0.8
+	c0.2,0,0.3,0,0.5,0c0.7,0,1.2,0.2,1.7,1.2l0.4,0.8c0.3,0.8,0.7,1.7,0.8,1.8c0.3,0.6,0.3,1.1,0,1.6c-0.1,0.3-0.3,0.5-0.5,0.7
+	c-0.1,0.2-0.2,0.3-0.3,0.3c-0.1,0.1-0.1,0.1-0.2,0.2c0.3,0.5,0.9,1.4,1.7,2.1c1.2,1.1,2.1,1.4,2.6,1.6l0,0c0.2-0.2,0.4-0.6,0.7-0.9
+	l0.1-0.2c0.5-0.7,1.3-0.9,2.1-0.6c0.4,0.2,2.6,1.2,2.6,1.2l0.2,0.1c0.3,0.2,0.7,0.3,0.9,0.7C26.2,18.5,25.9,19.8,25.7,20.5z"
+                      />
+                    </svg>
+                  </a>
+                  <a
+                    href="https://www.linkedin.com/authwall?trk=bf&trkInfo=AQFZ8D-UyHjczwAAAZF_QjyI2MoYpV_-dtGKWJKdPRKpGroSmxw3w2sZbZZ3H83_SfLMaDl06pDL16m3JaBUE2zL6oQyrpNipjeS-54uuBrdfsnom5pP_n0SvkB8ldtt2mnEzCA=&original_referer=&sessionRedirect=https%3A%2F%2Fwww.linkedin.com%2Fcompany%2Fgestaointeligentederesiduos"
+                    aria-label="social-link"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="text-body-color hover:text-primary dark:text-body-color-dark dark:hover:text-primary mr-6 duration-300"
+                  >
+                    <svg
+                      width="19"
+                      height="18"
+                      viewBox="0 0 17 16"
+                      className="fill-current"
+                    >
+                      <path d="M15.2196 0H1.99991C1.37516 0 0.875366 0.497491 0.875366 1.11936V14.3029C0.875366 14.8999 1.37516 15.4222 1.99991 15.4222H15.1696C15.7943 15.4222 16.2941 14.9247 16.2941 14.3029V1.09448C16.3441 0.497491 15.8443 0 15.2196 0ZM5.44852 13.1089H3.17444V5.7709H5.44852V13.1089ZM4.29899 4.75104C3.54929 4.75104 2.97452 4.15405 2.97452 3.43269C2.97452 2.71133 3.57428 2.11434 4.29899 2.11434C5.02369 2.11434 5.62345 2.71133 5.62345 3.43269C5.62345 4.15405 5.07367 4.75104 4.29899 4.75104ZM14.07 13.1089H11.796V9.55183C11.796 8.7061 11.771 7.58674 10.5964 7.58674C9.39693 7.58674 9.222 8.53198 9.222 9.47721V13.1089H6.94792V5.7709H9.17202V6.79076H9.19701C9.52188 6.19377 10.2466 5.59678 11.3711 5.59678C13.6952 5.59678 14.12 7.08925 14.12 9.12897V13.1089H14.07Z" />
+                    </svg>
+                  </a>
+                  <a
                     href="https://www.instagram.com/giresiduos/?hl=pt-br"
                     aria-label="social-link"
                     target="_blank"
@@ -60,31 +105,15 @@ const Footer = () => {
                     aria-label="social-link"
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="text-body-color hover:text-primary dark:text-body-color-dark dark:hover:text-primary mr-6 duration-300"
+                    className="text-body-color hover:text-primary dark:text-body-color-dark dark:hover:text-primary duration-300"
                   >
                     <svg
-                      width="21"
-                      height="17"
+                      width="23"
+                      height="19"
                       viewBox="0 0 18 14"
                       className="fill-current"
                     >
                       <path d="M17.5058 2.07119C17.3068 1.2488 16.7099 0.609173 15.9423 0.395963C14.5778 7.26191e-08 9.0627 0 9.0627 0C9.0627 0 3.54766 7.26191e-08 2.18311 0.395963C1.41555 0.609173 0.818561 1.2488 0.619565 2.07119C0.25 3.56366 0.25 6.60953 0.25 6.60953C0.25 6.60953 0.25 9.68585 0.619565 11.1479C0.818561 11.9703 1.41555 12.6099 2.18311 12.8231C3.54766 13.2191 9.0627 13.2191 9.0627 13.2191C9.0627 13.2191 14.5778 13.2191 15.9423 12.8231C16.7099 12.6099 17.3068 11.9703 17.5058 11.1479C17.8754 9.68585 17.8754 6.60953 17.8754 6.60953C17.8754 6.60953 17.8754 3.56366 17.5058 2.07119ZM7.30016 9.44218V3.77687L11.8771 6.60953L7.30016 9.44218Z" />
-                    </svg>
-                  </a>
-                  <a
-                    href="https://www.linkedin.com/authwall?trk=bf&trkInfo=AQFZ8D-UyHjczwAAAZF_QjyI2MoYpV_-dtGKWJKdPRKpGroSmxw3w2sZbZZ3H83_SfLMaDl06pDL16m3JaBUE2zL6oQyrpNipjeS-54uuBrdfsnom5pP_n0SvkB8ldtt2mnEzCA=&original_referer=&sessionRedirect=https%3A%2F%2Fwww.linkedin.com%2Fcompany%2Fgestaointeligentederesiduos"
-                    aria-label="social-link"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="text-body-color hover:text-primary dark:text-body-color-dark dark:hover:text-primary duration-300"
-                  >
-                    <svg
-                      width="19"
-                      height="18"
-                      viewBox="0 0 17 16"
-                      className="fill-current"
-                    >
-                      <path d="M15.2196 0H1.99991C1.37516 0 0.875366 0.497491 0.875366 1.11936V14.3029C0.875366 14.8999 1.37516 15.4222 1.99991 15.4222H15.1696C15.7943 15.4222 16.2941 14.9247 16.2941 14.3029V1.09448C16.3441 0.497491 15.8443 0 15.2196 0ZM5.44852 13.1089H3.17444V5.7709H5.44852V13.1089ZM4.29899 4.75104C3.54929 4.75104 2.97452 4.15405 2.97452 3.43269C2.97452 2.71133 3.57428 2.11434 4.29899 2.11434C5.02369 2.11434 5.62345 2.71133 5.62345 3.43269C5.62345 4.15405 5.07367 4.75104 4.29899 4.75104ZM14.07 13.1089H11.796V9.55183C11.796 8.7061 11.771 7.58674 10.5964 7.58674C9.39693 7.58674 9.222 8.53198 9.222 9.47721V13.1089H6.94792V5.7709H9.17202V6.79076H9.19701C9.52188 6.19377 10.2466 5.59678 11.3711 5.59678C13.6952 5.59678 14.12 7.08925 14.12 9.12897V13.1089H14.07Z" />
                     </svg>
                   </a>
                 </div>
@@ -287,14 +316,6 @@ const Footer = () => {
                       Sobre Nós
                     </Link>
                   </li>
-                  {/* <li>
-                    <Link
-                      href="/"
-                      className="text-body-color hover:text-primary dark:text-body-color-dark dark:hover:text-primary mb-4 inline-block text-base duration-300"
-                    >
-                      Soluções
-                    </Link>
-                  </li> */}
                   <li>
                     <Link
                       href="/blog"

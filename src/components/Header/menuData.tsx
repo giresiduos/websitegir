@@ -48,20 +48,14 @@ const menuData: Menu[] = [
         path: "/about",
         newTab: false,
       },
-      // {
-      //   id: 42,
-      //   title: "Soluções",
-      //   path: "/",
-      //   newTab: false,
-      // },
       {
-        id: 43,
+        id: 42,
         title: "Blog",
         path: "/blog",
         newTab: false,
       },
       {
-        id: 44,
+        id: 43,
         title: "Contato",
         path: "/contact",
         newTab: false,
