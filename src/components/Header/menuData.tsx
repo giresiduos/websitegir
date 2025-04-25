@@ -31,12 +31,12 @@ const menuData: Menu[] = [
   //   path: "#resultados",
   //   newTab: false,
   // },
-  {
-    id: 6,
-    title: "Blog",
-    path: "#blog",
-    newTab: false,
-  },
+  // {
+  //   id: 6,
+  //   title: "Blog",
+  //   path: "#blog",
+  //   newTab: false,
+  // },
   {
     id: 7,
     title: "Mais",

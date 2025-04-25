@@ -25,7 +25,7 @@ export async function POST(request: Request) {
 
     const mailOptions = {
       from: `"Formulário de Contato" <${process.env.SMTP_FROM_EMAIL}>`,
-      to: process.env.CONTACT_RECEIVER_EMAIL,
+      to: process.env.RECEIVER_EMAIL,
       subject: `Nova mensagem de ${name} - ${email}`,
       text: `
         Nome: ${name}

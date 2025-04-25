@@ -10,6 +10,7 @@ import Solutions from "@/components/Solutions";
 import Testimonials from "@/components/Testimonials";
 import AnimatedSection from "@/components/Common/AnimatedSection";
 import { Metadata } from "next";
+import Ebook from "@/components/Ebook";
 
 export const metadata: Metadata = {
   title: "GIR",
@@ -22,6 +23,8 @@ export default function Home() {
     <>
       <ScrollUp />
       <Hero />
+
+      <Ebook />
 
       <AnimatedSection>
         <Features />
@@ -39,9 +42,9 @@ export default function Home() {
         <Testimonials />
       </AnimatedSection> */}
 
-      <AnimatedSection>
+      {/* <AnimatedSection>
         <Blog />
-      </AnimatedSection>
+      </AnimatedSection> */}
 
       {/* <AnimatedSection> 
         <Contact />
