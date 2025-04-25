@@ -28,7 +28,7 @@ export async function POST(request: Request) {
     const mailOptions = {
       from: `"Novo Lead - Ebook" <${process.env.SMTP_FROM_EMAIL}>`,
       to: process.env.RECEIVER_EMAIL,
-      subject: `Novo lead para o ebook - ${name}`,
+      subject: `Lead captado pelo E-book - ${name}`,
       text: `
         Nome: ${name}
         Email: ${email}
@@ -36,7 +36,7 @@ export async function POST(request: Request) {
         Estado: ${state}
       `,
       html: `
-        <h1>Novo lead para o ebook</h1>
+        <h1>Lead captado pelo E-book</h1>
         <p><strong>Nome:</strong> ${name}</p>
         <p><strong>Email:</strong> ${email}</p>
         <p><strong>Telefone:</strong> ${phone}</p>
@@ -82,7 +82,7 @@ export async function POST(request: Request) {
     });
 
     return NextResponse.json(
-      { success: true, message: "Ebook enviado com sucesso para o email!" },
+      { success: true, message: "Ebook enviado com sucesso para o seu email!" },
       { status: 200 },
     );
   } catch (error) {
