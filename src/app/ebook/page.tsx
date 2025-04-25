@@ -7,7 +7,7 @@ import Link from "next/link";
 import LeadsCaptureModal from "@/components/Ebook/LeadsCapture";
 
 export const metadata: Metadata = {
-  title: "Ebook - GIR",
+  title: "E-book - GIR",
   // description: "This is Blog Details Page for Startup Nextjs Template",
   // other metadata
 };

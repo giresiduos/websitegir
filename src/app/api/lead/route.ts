@@ -26,7 +26,7 @@ export async function POST(request: Request) {
     }
 
     const mailOptions = {
-      from: `"Novo Lead - Ebook" <${process.env.SMTP_FROM_EMAIL}>`,
+      from: `"Novo Lead - E-book" <${process.env.SMTP_FROM_EMAIL}>`,
       to: process.env.RECEIVER_EMAIL,
       subject: `Lead captado pelo E-book - ${name}`,
       text: `
@@ -49,11 +49,11 @@ export async function POST(request: Request) {
     await transporter.sendMail({
       from: `"GIR" <${process.env.SMTP_FROM_EMAIL}>`,
       to: email,
-      subject: "Aqui está seu ebook!",
+      subject: "Aqui está seu e-book!",
       text: `
         Olá ${name},
 
-        Obrigado por baixar nosso ebook! Clique no link abaixo para acessar:
+        Obrigado por baixar nosso e-book! Clique no link abaixo para acessar:
 
         ${ebookUrl}
 
@@ -64,11 +64,11 @@ export async function POST(request: Request) {
       `,
       html: `
         <h2>Olá ${name},</h2>
-        <p>Obrigado por baixar nosso ebook! Clique no botão abaixo para acessar:</p>
+        <p>Obrigado por baixar nosso e-book! Clique no botão abaixo para acessar:</p>
         
         <div style="margin: 20px 0;">
           <a href="${ebookUrl}" style="background-color: #4CAF50; color: white; padding: 12px 20px; text-decoration: none; border-radius: 4px; font-weight: bold; display: inline-block;">
-            Baixar Ebook
+            Baixar E-book
           </a>
         </div>
         
@@ -82,13 +82,16 @@ export async function POST(request: Request) {
     });
 
     return NextResponse.json(
-      { success: true, message: "Ebook enviado com sucesso para o seu email!" },
+      {
+        success: true,
+        message: "E-book enviado com sucesso para o seu email!",
+      },
       { status: 200 },
     );
   } catch (error) {
     console.error("Erro ao processar lead:", error);
     return NextResponse.json(
-      { error: "Erro ao enviar o ebook. Por favor, tente novamente." },
+      { error: "Erro ao enviar o e-book. Por favor, tente novamente." },
       { status: 500 },
     );
   }
