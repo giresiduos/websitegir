@@ -63,3 +63,4 @@ const brandsData: Brand[] = [
 
 
 export default brandsData;
+
