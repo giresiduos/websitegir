@@ -35,9 +35,9 @@ export default function Home() {
         <Solutions />
       </AnimatedSection>
 
-      {/* <AnimatedSection>
+      <AnimatedSection>
         <Testimonials />
-      </AnimatedSection> */}
+      </AnimatedSection> 
 
       <AnimatedSection>
         <Blog />
