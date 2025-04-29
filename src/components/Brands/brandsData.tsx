@@ -11,7 +11,7 @@ const brandsData: Brand[] = [
   {
     id: 1,
     name: "Rest Pinheiros",
-    href: "#",
+    href: null,
     image: "/images/brands/restpinheiros.png",
     imageLight: "/images/brands/restpinheiros.png",
   },
