@@ -39,6 +39,19 @@ const Testimonials = () => {
       id="resultados"
       className="dark:bg-bg-color-dark bg-gray-light relative z-10 py-16 md:py-20 lg:py-28"
     >
+      <SectionTitle
+        title="Empresas que confiam na GIR"
+        center
+        width="700px"
+        mb="50px"
+      />
+
+      {/* <div className="mb-15 grid grid-cols-1 gap-x-8 gap-y-10 md:grid-cols-2 lg:grid-cols-3">
+        {testimonialData.map((testimonial) => (
+          <SingleTestimonial key={testimonial.id} testimonial={testimonial} />
+        ))}
+      </div> */}
+
       <div className="container">
         <Brands />
       </div>
