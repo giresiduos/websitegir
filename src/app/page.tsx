@@ -1,5 +1,5 @@
-import AboutSectionOne from "@/components/About/AboutSectionOne";
-import AboutSectionTwo from "@/components/About/AboutSectionTwo";
+import AboutSection from "@/components/About/AboutSection";
+import Operation from "@/components/Operation/Operation";
 import Blog from "@/components/Blog";
 import Brands from "@/components/Brands";
 import ScrollUp from "@/components/Common/ScrollUp";
@@ -10,9 +10,10 @@ import Solutions from "@/components/Solutions";
 import Testimonials from "@/components/Testimonials";
 import AnimatedSection from "@/components/Common/AnimatedSection";
 import { Metadata } from "next";
+import Ebook from "@/components/Ebook";
 
 export const metadata: Metadata = {
-  title: "Home - GIR",
+  title: "GIR",
   // description: "This is Home for Startup Nextjs Template",
   // other metadata
 };
@@ -23,25 +24,27 @@ export default function Home() {
       <ScrollUp />
       <Hero />
 
+      <Ebook />
+
       <AnimatedSection>
         <Features />
       </AnimatedSection>
 
       <AnimatedSection>
-        <AboutSectionTwo />
+        <Operation />
       </AnimatedSection>
 
       <AnimatedSection>
         <Solutions />
       </AnimatedSection>
 
-      {/* <AnimatedSection>
-        <Testimonials />
-      </AnimatedSection> */}
-
       <AnimatedSection>
+        <Testimonials />
+      </AnimatedSection> 
+
+      {/* <AnimatedSection>
         <Blog />
-      </AnimatedSection>
+      </AnimatedSection> */}
 
       {/* <AnimatedSection> 
         <Contact />

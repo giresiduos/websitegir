@@ -31,42 +31,36 @@ const menuData: Menu[] = [
   //   path: "#resultados",
   //   newTab: false,
   // },
-  {
-    id: 6,
-    title: "Blog",
-    path: "#blog",
-    newTab: false,
-  },
   // {
-  //   id: 7,
-  //   title: "Mais",
+  //   id: 6,
+  //   title: "Blog",
+  //   path: "#blog",
   //   newTab: false,
-  //   submenu: [
-  //     {
-  //       id: 41,
-  //       title: "Sobre Nós",
-  //       path: "/",
-  //       newTab: false,
-  //     },
-  //     {
-  //       id: 42,
-  //       title: "Soluções",
-  //       path: "/",
-  //       newTab: false,
-  //     },
-  //     {
-  //       id: 43,
-  //       title: "Blog",
-  //       path: "/",
-  //       newTab: false,
-  //     },
-  //     {
-  //       id: 44,
-  //       title: "Contato",
-  //       path: "/",
-  //       newTab: false,
-  //     },
-  //   ],
   // },
+  {
+    id: 7,
+    title: "Mais",
+    newTab: false,
+    submenu: [
+      {
+        id: 41,
+        title: "Sobre Nós",
+        path: "/about",
+        newTab: false,
+      },
+      {
+        id: 42,
+        title: "Blog",
+        path: "/blog",
+        newTab: false,
+      },
+      {
+        id: 43,
+        title: "Contato",
+        path: "/contact",
+        newTab: false,
+      },
+    ],
+  },
 ];
 export default menuData;
