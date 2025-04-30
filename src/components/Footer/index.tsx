@@ -117,88 +117,6 @@ const Footer = () => {
                     </svg>
                   </a>
                 </div>
-
-                {/* <div className="mb-8">
-                  <div className="align-center mb-3 flex gap-2">
-                    <svg
-                      width="22px"
-                      height="22px"
-                      viewBox="0 0 24 24"
-                      fill="none"
-                      xmlns="http://www.w3.org/2000/svg"
-                    >
-                      <path
-                        d="M12 21C15.5 17.4 19 14.1764 19 10.2C19 6.22355 15.866 3 12 3C8.13401 3 5 6.22355 5 10.2C5 14.1764 8.5 17.4 12 21Z"
-                        stroke="currentColor"
-                        strokeWidth="2"
-                        strokeLinecap="round"
-                        strokeLinejoin="round"
-                      />
-                      <path
-                        d="M12 12C13.1046 12 14 11.1046 14 10C14 8.89543 13.1046 8 12 8C10.8954 8 10 8.89543 10 10C10 11.1046 10.8954 12 12 12Z"
-                        stroke="currentColor"
-                        strokeWidth="2"
-                        strokeLinecap="round"
-                        strokeLinejoin="round"
-                      />
-                    </svg>
-                    <p className="text-body-color dark:text-body-color-dark text-base leading-relaxed">
-                      Av. Ten. Raimundo Rocha, 1639 - Cidade Universitária,
-                      Juazeiro do Norte - CE, 63048-080 Bloco R - Sala 108 UFCA
-                      , Ceará, BR
-                    </p>
-                  </div>
-                  <div className="align-center mb-3 flex gap-2">
-                    <svg
-                      width="22px"
-                      height="22px"
-                      viewBox="0 0 24 24"
-                      fill="none"
-                      xmlns="http://www.w3.org/2000/svg"
-                    >
-                      <path
-                        d="M4 7.00005L10.2 11.65C11.2667 12.45 12.7333 12.45 13.8 11.65L20 7"
-                        stroke="currentColor"
-                        strokeWidth="2"
-                        strokeLinecap="round"
-                        strokeLinejoin="round"
-                      />
-                      <rect
-                        x="3"
-                        y="5"
-                        width="18"
-                        height="14"
-                        rx="2"
-                        stroke="currentColor"
-                        strokeWidth="2"
-                        strokeLinecap="round"
-                      />
-                    </svg>
-                    <p className="text-body-color dark:text-body-color-dark text-base leading-relaxed">
-                      gir.eco@gmail.com
-                    </p>
-                  </div>
-                  <div className="align-center flex gap-2">
-                    <svg
-                      width="22px"
-                      height="22px"
-                      viewBox="0 0 24 24"
-                      fill="none"
-                      xmlns="http://www.w3.org/2000/svg"
-                    >
-                      <path
-                        d="M3 5.5C3 14.0604 9.93959 21 18.5 21C18.8862 21 19.2691 20.9859 19.6483 20.9581C20.0834 20.9262 20.3009 20.9103 20.499 20.7963C20.663 20.7019 20.8185 20.5345 20.9007 20.364C21 20.1582 21 19.9181 21 19.438V16.6207C21 16.2169 21 16.015 20.9335 15.842C20.8749 15.6891 20.7795 15.553 20.6559 15.4456C20.516 15.324 20.3262 15.255 19.9468 15.117L16.74 13.9509C16.2985 13.7904 16.0777 13.7101 15.8683 13.7237C15.6836 13.7357 15.5059 13.7988 15.3549 13.9058C15.1837 14.0271 15.0629 14.2285 14.8212 14.6314L14 16C11.3501 14.7999 9.2019 12.6489 8 10L9.36863 9.17882C9.77145 8.93713 9.97286 8.81628 10.0942 8.64506C10.2012 8.49408 10.2643 8.31637 10.2763 8.1317C10.2899 7.92227 10.2096 7.70153 10.0491 7.26005L8.88299 4.05321C8.745 3.67376 8.67601 3.48403 8.55442 3.3441C8.44701 3.22049 8.31089 3.12515 8.15802 3.06645C7.98496 3 7.78308 3 7.37932 3H4.56201C4.08188 3 3.84181 3 3.63598 3.09925C3.4655 3.18146 3.29814 3.33701 3.2037 3.50103C3.08968 3.69907 3.07375 3.91662 3.04189 4.35173C3.01413 4.73086 3 5.11378 3 5.5Z"
-                        stroke="currentColor"
-                        strokeWidth="2"
-                        strokeLinecap="round"
-                        strokeLinejoin="round"
-                      />
-                    </svg>
-                    <p className="text-body-color dark:text-body-color-dark text-base leading-relaxed">
-                      +55 (85) 9 9999-9999
-                    </p>
-                  </div>
-                </div> */}
               </div>
             </div>
 
@@ -347,75 +265,118 @@ const Footer = () => {
         </div>
         <div className="absolute top-14 right-0 z-[-1]">
           <svg
-            width="55"
-            height="99"
-            viewBox="0 0 55 99"
+            width="79"
+            height="94"
+            viewBox="0 0 79 94"
             fill="none"
             xmlns="http://www.w3.org/2000/svg"
+            className="scale-x-[-1]"
           >
-            <circle opacity="0.8" cx="49.5" cy="49.5" r="49.5" fill="#959CB1" />
-            <mask
-              id="mask0_94:899"
-              style={{ maskType: "alpha" }}
-              maskUnits="userSpaceOnUse"
-              x="0"
-              y="0"
-              width="99"
-              height="99"
-            >
-              <circle
-                opacity="0.8"
-                cx="49.5"
-                cy="49.5"
-                r="49.5"
-                fill="#4F9530"
-              />
-            </mask>
-            <g mask="url(#mask0_94:899)">
-              <circle
-                opacity="0.8"
-                cx="49.5"
-                cy="49.5"
-                r="49.5"
-                fill="url(#paint0_radial_94:899)"
-              />
-              <g opacity="0.8" filter="url(#filter0_f_94:899)">
-                <circle cx="53.8676" cy="26.2061" r="20.3824" fill="white" />
-              </g>
-            </g>
+            <rect
+              opacity="0.3"
+              x="-41"
+              y="26.9426"
+              width="66.6675"
+              height="66.6675"
+              transform="rotate(-22.9007 -41 26.9426)"
+              fill="url(#paint0_linear_94:889)"
+            />
+            <rect
+              x="-41"
+              y="26.9426"
+              width="66.6675"
+              height="66.6675"
+              transform="rotate(-22.9007 -41 26.9426)"
+              stroke="url(#paint1_linear_94:889)"
+              strokeWidth="0.7"
+            />
+            <path
+              opacity="0.3"
+              d="M50.5215 7.42229L20.325 1.14771L46.2077 62.3249L77.1885 68.2073L50.5215 7.42229Z"
+              fill="url(#paint2_linear_94:889)"
+            />
+            <path
+              d="M50.5215 7.42229L20.325 1.14771L46.2077 62.3249L76.7963 68.2073L50.5215 7.42229Z"
+              stroke="url(#paint3_linear_94:889)"
+              strokeWidth="0.7"
+            />
+            <path
+              opacity="0.3"
+              d="M17.9721 93.3057L-14.9695 88.2076L46.2077 62.325L77.1885 68.2074L17.9721 93.3057Z"
+              fill="url(#paint4_linear_94:889)"
+            />
+            <path
+              d="M17.972 93.3057L-14.1852 88.2076L46.2077 62.325L77.1884 68.2074L17.972 93.3057Z"
+              stroke="url(#paint5_linear_94:889)"
+              strokeWidth="0.7"
+            />
             <defs>
-              <filter
-                id="filter0_f_94:899"
-                x="12.4852"
-                y="-15.1763"
-                width="82.7646"
-                height="82.7646"
-                filterUnits="userSpaceOnUse"
-                colorInterpolationFilters="sRGB"
-              >
-                <feFlood floodOpacity="0" result="BackgroundImageFix" />
-                <feBlend
-                  mode="normal"
-                  in="SourceGraphic"
-                  in2="BackgroundImageFix"
-                  result="shape"
-                />
-                <feGaussianBlur
-                  stdDeviation="10.5"
-                  result="effect1_foregroundBlur_94:899"
-                />
-              </filter>
-              <radialGradient
-                id="paint0_radial_94:899"
-                cx="0"
-                cy="0"
-                r="1"
+              <linearGradient
+                id="paint0_linear_94:889"
+                x1="-41"
+                y1="21.8445"
+                x2="36.9671"
+                y2="59.8878"
                 gradientUnits="userSpaceOnUse"
-                gradientTransform="translate(49.5 49.5) rotate(90) scale(53.1397)"
               >
-                <stop stopOpacity="0.47" />
-                <stop offset="1" stopOpacity="0" />
-              </radialGradient>
+                <stop stopColor="#4F9530" stopOpacity="0.62" />
+                <stop offset="1" stopColor="#4F9530" stopOpacity="0" />
+              </linearGradient>
+              <linearGradient
+                id="paint1_linear_94:889"
+                x1="25.6675"
+                y1="95.9631"
+                x2="-42.9608"
+                y2="20.668"
+                gradientUnits="userSpaceOnUse"
+              >
+                <stop stopColor="#4F9530" stopOpacity="0" />
+                <stop offset="1" stopColor="#4F9530" stopOpacity="0.51" />
+              </linearGradient>
+              <linearGradient
+                id="paint2_linear_94:889"
+                x1="20.325"
+                y1="-3.98039"
+                x2="90.6248"
+                y2="25.1062"
+                gradientUnits="userSpaceOnUse"
+              >
+                <stop stopColor="#4F9530" stopOpacity="0.62" />
+                <stop offset="1" stopColor="#4F9530" stopOpacity="0" />
+              </linearGradient>
+              <linearGradient
+                id="paint3_linear_94:889"
+                x1="18.3642"
+                y1="-1.59742"
+                x2="113.9"
+                y2="80.6826"
+                gradientUnits="userSpaceOnUse"
+              >
+                <stop stopColor="#4F9530" stopOpacity="0" />
+                <stop offset="1" stopColor="#4F9530" stopOpacity="0.51" />
+              </linearGradient>
+              <linearGradient
+                id="paint4_linear_94:889"
+                x1="61.1098"
+                y1="62.3249"
+                x2="-8.82468"
+                y2="58.2156"
+                gradientUnits="userSpaceOnUse"
+              >
+                <stop stopColor="#4F9530" stopOpacity="0.62" />
+                <stop offset="1" stopColor="#4F9530" stopOpacity="0" />
+              </linearGradient>
+              <linearGradient
+                id="paint5_linear_94:889"
+                x1="65.4236"
+                y1="65.0701"
+                x2="24.0178"
+                y2="41.6598"
+                gradientUnits="userSpaceOnUse"
+              >
+                <stop stopColor="#4F9530" stopOpacity="0" />
+                <stop offset="1" stopColor="#4F9530" stopOpacity="0.51" />
+              </linearGradient>
             </defs>
           </svg>
         </div>
