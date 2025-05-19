@@ -10,7 +10,8 @@ const Blog = () => {
     >
       <div className="container">
         <SectionTitle
-          title="A melhor informação para você inovar na gestão de resíduos."
+          title="Escolha um impacto positivo! Aprenda a fazer de forma simples a gestão de resíduos em cada cômodo de sua casa. 
+          Faça o download gratuito do nosso guia completo e descubra segredos que poucos conhecem."
           paragraph="Últimos artigos e e-books"
           center
           width="800px"

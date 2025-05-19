@@ -9,8 +9,13 @@ const Features = () => {
         <div className="container">
           <div className="border-body-color/[.15] border-b pb-16 md:pb-20 lg:pb-28 dark:border-white/[.15]">
             <SectionTitle
-              title="Por que a GIR é a escolha certa?"
-              center
+              title={
+                <span>
+                  Por que <span className="font-bold text-[#4F9530]">aGIR</span>{" "}
+                  é a escolha certa?
+                </span>
+              }
+              center={true} // Ensure center is a boolean
               width="800px"
               mb="70px"
             />

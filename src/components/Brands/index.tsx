@@ -57,7 +57,7 @@ export default Brands;
 const SingleBrand = ({ brand }: { brand: Brand }) => {
   const { href, image, imageLight, name } = brand;
   const imgStyle =
-    "relative h-60 w-60 sm:h-60 sm:w-60 md:h-60 md:w-60 lg:h-52 lg:w-52 opacity-70 transition hover:opacity-100 dark:opacity-60 dark:hover:opacity-100";
+    "relative h-60 w-60 sm:h-60 sm:w-60 md:h-60 md:w-60 lg:h-52 lg:w-52 opacity-90 transition hover:opacity-100 dark:opacity-80 dark:hover:opacity-100 hover:scale-105";
   return (
     <div className="flex items-center justify-center p-2 sm:p-4">
       {href ? (
@@ -71,13 +71,13 @@ const SingleBrand = ({ brand }: { brand: Brand }) => {
             src={imageLight}
             alt={name}
             fill
-            className="hidden object-contain dark:block"
+            className="hidden object-contain contrast-125 dark:block dark:brightness-110"
           />
           <Image
             src={image}
             alt={name}
             fill
-            className="block object-contain dark:hidden"
+            className="block object-contain contrast-110 dark:hidden"
           />
         </a>
       ) : (
@@ -86,13 +86,13 @@ const SingleBrand = ({ brand }: { brand: Brand }) => {
             src={imageLight}
             alt={name}
             fill
-            className="hidden object-contain dark:block"
+            className="hidden object-contain contrast-125 dark:block dark:brightness-110"
           />
           <Image
             src={image}
             alt={name}
             fill
-            className="block object-contain dark:hidden"
+            className="block object-contain contrast-110 dark:hidden"
           />
         </div>
       )}
