@@ -9,7 +9,12 @@ const Features = () => {
         <div className="container">
           <div className="border-body-color/[.15] border-b pb-16 md:pb-20 lg:pb-28 dark:border-white/[.15]">
             <SectionTitle
-              title="Por que a GIR é a escolha certa?"
+              title={
+                <>
+                  Por que <strong style={{ color: "#4F9530" }}>aGIR</strong> é a
+                  escolha certa?
+                </>
+              }
               center
               width="800px"
               mb="70px"
