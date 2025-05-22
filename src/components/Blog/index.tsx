@@ -10,7 +10,7 @@ const Blog = () => {
     >
       <div className="container">
         <SectionTitle
-          title="A melhor informação para você  na gestão de resíduos."
+          title="A melhor informação para você inovar na gestão de resíduos."
           paragraph="Últimos artigos e e-books"
           center
           width="800px"

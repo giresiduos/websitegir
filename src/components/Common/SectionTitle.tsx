@@ -20,7 +20,7 @@ const SectionTitle = ({
         style={{ maxWidth: width, marginBottom: mb }}
       >
         <h2
-          className={`mb-4 text-3xl leading-tight! font-bold text-black sm:text-4xl md:text-[45px] dark:text-white ${titleClassName}`}
+          className={`mb-4 text-3xl leading-tight! font-bold text-black sm:text-4xl md:text-[45px] md:max-lg:text-4xl lg:text-[45px] dark:text-white ${titleClassName}`}
         >
           {title}
         </h2>

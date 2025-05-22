@@ -34,7 +34,7 @@ const Footer = () => {
 
                 <div className="flex items-center">
                   <a
-                    href="https://api.whatsapp.com/send?1=pt_BR&phone=5588997289829"
+                    href="https://api.whatsapp.com/send?1=pt_BR&phone=5588998611658"
                     aria-label="social-link"
                     target="_blank"
                     rel="noopener noreferrer"
