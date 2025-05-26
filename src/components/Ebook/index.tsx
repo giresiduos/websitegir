@@ -8,11 +8,16 @@ const Ebook = () => {
     <section id="resultados" className="relative z-10 py-20">
       <div className="container">
         <SectionTitle
-          title="A melhor informação para você inovar na gestão de resíduos."
-          paragraph="Baixe nosso último e-book"
+          title="Escolha um impacto positivo! Aprenda a fazer de forma simples a gestão de resíduos em cada cômodo de sua casa. Faça o download gratuito do nosso guia completo e descubra segredos que poucos conhecem."
+          paragraph={
+            <Link href="/ebook" className="hover:text-primary">
+              Baixe nosso último e-book
+            </Link>
+          }
           center
-          width="800px"
+          width="900px"
           mb="60px"
+          titleClassName="text-lg md:text-2xl lg:text-3xl"
         />
 
         <div className="group shadow-one relative mx-auto max-w-[1000px] overflow-hidden rounded-xs duration-300">
