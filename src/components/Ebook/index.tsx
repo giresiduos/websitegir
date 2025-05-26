@@ -15,9 +15,9 @@ const Ebook = () => {
             </Link>
           }
           center
-          width="800px"
+          width="900px"
           mb="60px"
-          titleClassName="text-base sm:text-lg lg:text-xl"
+          titleClassName="text-lg md:text-2xl lg:text-3xl"
         />
 
         <div className="group shadow-one relative mx-auto max-w-[1000px] overflow-hidden rounded-xs duration-300">

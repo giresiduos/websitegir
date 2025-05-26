@@ -37,7 +37,9 @@ const Hero = () => {
                 </p>
                 <div className="flex flex-col items-center justify-center space-y-4 sm:flex-row sm:space-y-0 sm:space-x-4">
                   <Link
-                    href="/contact"
+                    href="https://sistema.gir.eco.br/register"
+                    target="_blank"
+                    rel="noopener noreferrer"
                     className="bg-primary hover:bg-primary/80 rounded-xs px-8 py-4 text-base font-semibold text-white duration-300 ease-in-out"
                   >
                     Quero uma demonstração
