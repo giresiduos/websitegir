@@ -72,7 +72,9 @@ const AboutSectionTwo = () => {
 
           <div className="mt-15 flex w-full flex-col items-center justify-center space-y-4 sm:w-auto sm:flex-row sm:space-y-0 sm:space-x-4">
             <Link
-              href="https://api.whatsapp.com/send?1=pt_BR&phone=5588998611658"
+              href="https://sistema.gir.eco.br/register"
+              target="_blank"
+              rel="noopener noreferrer"
               className="bg-primary hover:bg-primary/80 w-full rounded-xs px-10 py-6 text-center text-xl font-semibold text-white duration-300 ease-in-out sm:w-auto"
             >
               Solicitar Demonstração Agora

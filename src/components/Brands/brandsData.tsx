@@ -2,13 +2,6 @@ import { Brand } from "@/types/brand";
 
 const brandsData: Brand[] = [
   {
-    id: 6,
-    name: "Trevo Drywall",
-    href: "https://www.trevodrywall.com.br",
-    image: "/images/brands/trevo.svg",
-    imageLight: "/images/brands/trevo.svg",
-  },
-  {
     id: 1,
     name: "Rest Pinheiros",
     href: null,
@@ -21,13 +14,6 @@ const brandsData: Brand[] = [
     href: "https://tabernadacarne.com.br",
     image: "/images/brands/tabernadacarne-light.svg",
     imageLight: "/images/brands/tabernadacarne.svg",
-  },
-  {
-    id: 8,
-    name: "COOKARIRI",
-    href: "https://www.instagram.com/redecookariri/",
-    image: "/images/brands/cookariri.svg",
-    imageLight: "/images/brands/cookariri.svg",
   },
   {
     id: 3,
@@ -50,7 +36,13 @@ const brandsData: Brand[] = [
     image: "/images/brands/urca-dark.png",
     imageLight: "/images/brands/urca-light.png",
   },
-
+  {
+    id: 6,
+    name: "Trevo Drywall",
+    href: "https://www.trevodrywall.com.br",
+    image: "/images/brands/trevo.svg",
+    imageLight: "/images/brands/trevo.svg",
+  },
   {
     id: 7,
     name: "AMJUR",
@@ -58,9 +50,48 @@ const brandsData: Brand[] = [
     image: "/images/brands/amaju-light.svg",
     imageLight: "/images/brands/amaju-dark.png",
   },
-
+  {
+    id: 8,
+    name: "COOKARIRI",
+    href: "https://www.instagram.com/redecookariri/",
+    image: "/images/brands/cookariri.svg",
+    imageLight: "/images/brands/cookariri.svg",
+  },
+  {
+    id: 9,
+    name: "FIEC",
+    href: "https://www1.sfiec.org.br",
+    image: "/images/brands/fiec.png",
+    imageLight: "/images/brands/fiec.png",
+  },
+  {
+    id: 10,
+    name: "IEL",
+    href: "https://www.iel-ce.org.br",
+    image: "/images/brands/iel.png",
+    imageLight: "/images/brands/iel.png",
+  },
+  {
+    id: 11,
+    name: "CTI-AMBIENTAL",
+    href: "https://ctiambiental.com.br",
+    image: "/images/brands/cti-light.png",
+    imageLight: "/images/brands/cti-dark.png",
+  },
+  {
+    id: 12,
+    name: "CADAFALSO",
+    href: "null",
+    image: "/images/brands/cadafalso.jpeg",
+    imageLight: "/images/brands/cadafalso.jpeg",
+  },
+  {
+    id: 14,
+    name: "STARLIMP",
+    href: "https://www.instagram.com/starlimp.me/",
+    image: "/images/brands/starlimp.png",
+    imageLight: "/images/brands/starlimp.png",
+  },
 ];
 
-
 export default brandsData;
-
