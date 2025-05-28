@@ -75,7 +75,7 @@ const AboutSectionTwo = () => {
               href="https://sistema.gir.eco.br/register"
               target="_blank"
               rel="noopener noreferrer"
-              className="bg-primary hover:bg-primary/80 w-full rounded-xs px-10 py-6 text-center text-xl font-semibold text-white duration-300 ease-in-out sm:w-auto"
+              className="bg-primary hover:bg-primary/80 w-full rounded-lg px-6 sm:px-25 py-5 sm:py-6 text-center sm:text-xl font-semibold text-white duration-300 ease-in-out sm:w-auto"
             >
               Solicitar Demonstração Agora
             </Link>

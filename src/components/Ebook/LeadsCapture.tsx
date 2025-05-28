@@ -116,7 +116,7 @@ const LeadsCaptureModal = () => {
       <div className="flex flex-col items-center justify-center space-y-4 sm:flex-row sm:space-y-0 sm:space-x-4">
         <button
           onClick={() => setIsOpen(true)}
-          className="bg-primary hover:bg-primary/90 rounded-xs px-6 py-3 text-base font-medium text-white duration-300"
+          className="bg-primary hover:bg-primary/90 rounded-lg px-6 py-3 text-base font-medium text-white duration-300 cursor-pointer"
         >
           Baixar E-book
         </button>
@@ -125,7 +125,7 @@ const LeadsCaptureModal = () => {
       {isOpen && (
         <div className="fixed inset-0 z-10000 flex items-center justify-center overflow-x-hidden overflow-y-auto bg-black/50 outline-none focus:outline-none">
           <div className="relative mx-auto my-6 mt-20 w-full max-w-3xl px-4">
-            <div className="shadow-three dark:bg-gray-dark relative flex max-h-screen w-full flex-col overflow-y-auto rounded-xs border-0 bg-white outline-none focus:outline-none">
+            <div className="shadow-three dark:bg-gray-dark relative flex max-h-screen w-full flex-col overflow-y-auto rounded-lg border-0 bg-white outline-none focus:outline-none">
               <div className="flex items-start justify-between rounded-t px-10 pt-10">
                 <h3 className="text-2xl font-semibold text-black dark:text-white">
                   Baixe o seu E-book grátis
@@ -135,7 +135,7 @@ const LeadsCaptureModal = () => {
               <div className="relative flex-auto p-10">
                 {submitStatus && (
                   <div
-                    className={`relative mb-6 rounded-xs p-4 pr-10 ${submitStatus.success ? "bg-green-100 text-green-700" : "bg-red-100 text-red-700"}`}
+                    className={`relative mb-6 rounded-lg p-4 pr-10 ${submitStatus.success ? "bg-green-100 text-green-700" : "bg-red-100 text-red-700"}`}
                   >
                     {submitStatus.message}
                     <button
@@ -166,7 +166,7 @@ const LeadsCaptureModal = () => {
                           value={formData.name}
                           onChange={handleChange}
                           placeholder="Digite seu nome"
-                          className="border-stroke text-body-color focus:border-primary dark:text-body-color-dark dark:shadow-two dark:focus:border-primary w-full rounded-xs border bg-[#f8f8f8] px-6 py-3 text-base outline-none dark:border-transparent dark:bg-[#2C303B]"
+                          className="border-stroke text-body-color focus:border-primary dark:text-body-color-dark dark:shadow-two dark:focus:border-primary w-full rounded-lg border bg-[#f8f8f8] px-6 py-3 text-base outline-none dark:border-transparent dark:bg-[#2C303B]"
                           required
                         />
                       </div>
@@ -186,7 +186,7 @@ const LeadsCaptureModal = () => {
                           value={formData.email}
                           onChange={handleChange}
                           placeholder="Digite seu email"
-                          className="border-stroke text-body-color focus:border-primary dark:text-body-color-dark dark:shadow-two dark:focus:border-primary w-full rounded-xs border bg-[#f8f8f8] px-6 py-3 text-base outline-none dark:border-transparent dark:bg-[#2C303B]"
+                          className="border-stroke text-body-color focus:border-primary dark:text-body-color-dark dark:shadow-two dark:focus:border-primary w-full rounded-lg border bg-[#f8f8f8] px-6 py-3 text-base outline-none dark:border-transparent dark:bg-[#2C303B]"
                           required
                         />
                       </div>
@@ -207,7 +207,7 @@ const LeadsCaptureModal = () => {
                           value={formData.phone}
                           onChange={handleChange}
                           placeholder="(00) 00000-0000"
-                          className="border-stroke text-body-color focus:border-primary dark:text-body-color-dark dark:shadow-two dark:focus:border-primary w-full rounded-xs border bg-[#f8f8f8] px-6 py-3 text-base outline-none dark:border-transparent dark:bg-[#2C303B]"
+                          className="border-stroke text-body-color focus:border-primary dark:text-body-color-dark dark:shadow-two dark:focus:border-primary w-full rounded-lg border bg-[#f8f8f8] px-6 py-3 text-base outline-none dark:border-transparent dark:bg-[#2C303B]"
                           required
                         />
                       </div>
@@ -228,7 +228,7 @@ const LeadsCaptureModal = () => {
                           value={formData.state}
                           onChange={handleChange}
                           placeholder="Digite seu estado"
-                          className="border-stroke text-body-color focus:border-primary dark:text-body-color-dark dark:shadow-two dark:focus:border-primary w-full rounded-xs border bg-[#f8f8f8] px-6 py-3 text-base outline-none dark:border-transparent dark:bg-[#2C303B]"
+                          className="border-stroke text-body-color focus:border-primary dark:text-body-color-dark dark:shadow-two dark:focus:border-primary w-full rounded-lg border bg-[#f8f8f8] px-6 py-3 text-base outline-none dark:border-transparent dark:bg-[#2C303B]"
                           required
                         />
                       </div>
@@ -238,7 +238,7 @@ const LeadsCaptureModal = () => {
                   <div className="flex items-center justify-end rounded-b pt-4">
                     <button
                       type="button"
-                      className="background-transparent mr-3 cursor-pointer rounded-xs px-6 py-2 text-sm font-bold text-red-500 uppercase transition-all duration-150 ease-linear outline-none focus:outline-none"
+                      className="background-transparent mr-3 cursor-pointer rounded-lg px-6 py-2 text-sm font-bold text-red-500 uppercase transition-all duration-150 ease-linear outline-none focus:outline-none"
                       onClick={() => {
                         setIsOpen(false);
                         setSubmitStatus(null);
@@ -249,7 +249,7 @@ const LeadsCaptureModal = () => {
                     <button
                       type="submit"
                       disabled={isSubmitting}
-                      className="bg-primary shadow-submit hover:bg-primary/90 dark:shadow-submit-dark cursor-pointer rounded-xs px-6 py-3 text-sm font-bold text-white uppercase duration-300 disabled:cursor-not-allowed disabled:opacity-70"
+                      className="bg-primary shadow-submit hover:bg-primary/90 dark:shadow-submit-dark cursor-pointer rounded-lg px-6 py-3 text-sm font-bold text-white uppercase duration-300 disabled:cursor-not-allowed disabled:opacity-70"
                     >
                       {isSubmitting ? "Enviando..." : "Solicitar E-book"}
                     </button>
