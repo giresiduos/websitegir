@@ -20,7 +20,7 @@ const Ebook = () => {
           titleClassName="text-lg md:text-2xl lg:text-3xl"
         />
 
-        <div className="group shadow-one relative mx-auto max-w-[1000px] overflow-hidden rounded-xs duration-300">
+        <div className="group shadow-one relative mx-auto max-w-[1000px] overflow-hidden rounded-lg duration-300">
           <Link
             href="/ebook"
             className="relative block aspect-37/22 max-h-[300px] w-full"
@@ -60,7 +60,7 @@ const Ebook = () => {
             <div className="flex w-full flex-col items-center justify-center space-y-4 sm:w-auto sm:flex-row sm:space-y-0 sm:space-x-4">
               <Link
                 href="/ebook"
-                className="bg-primary hover:bg-primary/80 w-full rounded-xs px-6 py-4 text-center text-lg font-semibold text-white duration-300 ease-in-out sm:w-auto"
+                className="bg-primary hover:bg-primary/80 w-full rounded-lg px-6 py-4 text-center text-lg font-semibold text-white duration-300 ease-in-out sm:w-auto"
               >
                 Mais detalhes
               </Link>

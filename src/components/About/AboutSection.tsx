@@ -70,7 +70,7 @@ const AboutSection = () => {
           inteligente promove uma relação mais eficiente e colaborativa entre
           empresas, a população, valiosos agentes ambientais (catadores) e
           órgãos públicos, pavimentando o caminho para uma{" "}
-          {FontBold({ text: "economia circular" })}
+          {FontBold({ text: "economia circular" })}{" "}
           robusta, significativa{" "}
           {FontBold({ text: "redução de custos operacionais" })} e uma{" "}
           {FontBold({ text: "educação ambiental" })} de alta qualidade e real
@@ -113,7 +113,7 @@ const AboutSection = () => {
           engajada junto ao terceiro setor, abrangendo agentes ambientais
           individuais, associações e cooperativas de catadores. Acreditamos
           firmemente, e comprovamos em nossos projetos, que a educação em seu
-          sentido mais amplo impulsiona nosso negócio, conferindo-nos uma
+          sentido mais amplo impulsiona nosso negócio, conferindo-nos uma{" "}
           {FontBold({ text: "vantagem competitiva" })} notável em relação aos
           concorrentes.
         </p>
