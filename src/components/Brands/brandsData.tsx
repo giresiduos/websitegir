@@ -92,6 +92,20 @@ const brandsData: Brand[] = [
     image: "/images/brands/starlimp.png",
     imageLight: "/images/brands/starlimp.png",
   },
-];
 
+  {
+    id: 15,
+    name: "WBT",
+    href: "null",
+    image: "/images/brands/darck_wbt.png",
+    imageLight: "/images/brands/lightwbt.png",
+  },
+  {
+    id: 16,
+    name: "SEU_CONSTRUTOR",
+    href: "null",
+    image: "/images/brands/seu_light.png",
+    imageLight: "/images/brands/seu_darck.png",
+  },
+];
 export default brandsData;
