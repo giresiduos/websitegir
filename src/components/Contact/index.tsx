@@ -104,7 +104,7 @@ const Contact = () => {
         <div className="-mx-4 flex flex-wrap">
           <div className="w-full px-4 lg:w-7/12 xl:w-8/12">
             <div
-              className="shadow-three dark:bg-gray-dark mb-12 rounded-xs bg-white px-8 py-11 sm:p-[55px] lg:mb-5 lg:px-8 xl:p-[55px]"
+              className="shadow-three dark:bg-gray-dark mb-12 rounded-lg bg-white px-8 py-11 sm:p-[55px] lg:mb-5 lg:px-8 xl:p-[55px]"
               data-wow-delay=".15s"
             >
               <h2 className="mb-3 text-2xl font-bold text-black sm:text-3xl lg:text-2xl xl:text-3xl dark:text-white">
@@ -113,7 +113,7 @@ const Contact = () => {
 
               {submitStatus && (
                 <div
-                  className={`relative mb-6 rounded-xs p-4 pr-10 ${submitStatus.success ? "bg-green-100 text-green-700" : "bg-red-100 text-red-700"}`}
+                  className={`relative mb-6 rounded-lg p-4 pr-10 ${submitStatus.success ? "bg-green-100 text-green-700" : "bg-red-100 text-red-700"}`}
                 >
                   {submitStatus.message}
                   <button
@@ -144,7 +144,7 @@ const Contact = () => {
                         value={formData.name}
                         onChange={handleChange}
                         placeholder="Digite seu nome"
-                        className="border-stroke text-body-color focus:border-primary dark:text-body-color-dark dark:shadow-two dark:focus:border-primary w-full rounded-xs border bg-[#f8f8f8] px-6 py-3 text-base outline-hidden dark:border-transparent dark:bg-[#2C303B] dark:focus:shadow-none"
+                        className="border-stroke text-body-color focus:border-primary dark:text-body-color-dark dark:shadow-two dark:focus:border-primary w-full rounded-lg border bg-[#f8f8f8] px-6 py-3 text-base outline-hidden dark:border-transparent dark:bg-[#2C303B] dark:focus:shadow-none"
                         required
                       />
                     </div>
@@ -164,7 +164,7 @@ const Contact = () => {
                         value={formData.email}
                         onChange={handleChange}
                         placeholder="Digite seu email"
-                        className="border-stroke text-body-color focus:border-primary dark:text-body-color-dark dark:shadow-two dark:focus:border-primary w-full rounded-xs border bg-[#f8f8f8] px-6 py-3 text-base outline-hidden dark:border-transparent dark:bg-[#2C303B] dark:focus:shadow-none"
+                        className="border-stroke text-body-color focus:border-primary dark:text-body-color-dark dark:shadow-two dark:focus:border-primary w-full rounded-lg border bg-[#f8f8f8] px-6 py-3 text-base outline-hidden dark:border-transparent dark:bg-[#2C303B] dark:focus:shadow-none"
                         required
                       />
                     </div>
@@ -184,7 +184,7 @@ const Contact = () => {
                         value={formData.phone}
                         onChange={handleChange}
                         placeholder="(00) 00000-0000"
-                        className="border-stroke text-body-color focus:border-primary dark:text-body-color-dark dark:shadow-two dark:focus:border-primary w-full rounded-xs border bg-[#f8f8f8] px-6 py-3 text-base outline-hidden dark:border-transparent dark:bg-[#2C303B] dark:focus:shadow-none"
+                        className="border-stroke text-body-color focus:border-primary dark:text-body-color-dark dark:shadow-two dark:focus:border-primary w-full rounded-lg border bg-[#f8f8f8] px-6 py-3 text-base outline-hidden dark:border-transparent dark:bg-[#2C303B] dark:focus:shadow-none"
                       />
                     </div>
                   </div>
@@ -203,7 +203,7 @@ const Contact = () => {
                         value={formData.message}
                         onChange={handleChange}
                         placeholder="Digite sua mensagem"
-                        className="border-stroke text-body-color focus:border-primary dark:text-body-color-dark dark:shadow-two dark:focus:border-primary w-full resize-none rounded-xs border bg-[#f8f8f8] px-6 py-3 text-base outline-hidden dark:border-transparent dark:bg-[#2C303B] dark:focus:shadow-none"
+                        className="border-stroke text-body-color focus:border-primary dark:text-body-color-dark dark:shadow-two dark:focus:border-primary w-full resize-none rounded-lg border bg-[#f8f8f8] px-6 py-3 text-base outline-hidden dark:border-transparent dark:bg-[#2C303B] dark:focus:shadow-none"
                         required
                       ></textarea>
                     </div>
@@ -212,7 +212,7 @@ const Contact = () => {
                     <button
                       type="submit"
                       disabled={isSubmitting}
-                      className="bg-primary shadow-submit hover:bg-primary/90 dark:shadow-submit-dark rounded-xs px-9 py-4 text-base font-medium text-white duration-300 disabled:cursor-not-allowed disabled:opacity-70"
+                      className="bg-primary shadow-submit hover:bg-primary/90 dark:shadow-submit-dark rounded-lg px-9 py-4 text-base font-medium text-white duration-300 disabled:cursor-not-allowed disabled:opacity-70"
                     >
                       {isSubmitting ? "Enviando..." : "Enviar Solicitação"}
                     </button>

@@ -30,7 +30,7 @@ const BlogDetailsPage = () => {
                     Mergulhe conosco neste universo da Educação Ambiental,
                     criado para capacitar e conscientizar a todos.
                   </p>
-                  <div className="mb-10 w-full overflow-hidden rounded-sm">
+                  <div className="mb-10 w-full overflow-hidden rounded-lg">
                     <div className="relative aspect-97/60 w-full sm:aspect-97/44">
                       <Image
                         src="/images/blog/ebook-gir.jpg"
