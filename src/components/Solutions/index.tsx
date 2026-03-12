@@ -89,7 +89,7 @@ const Pricing = () => {
 
         <div className="mt-15 flex w-full flex-col items-center justify-center space-y-4 sm:w-auto sm:flex-row sm:space-y-0 sm:space-x-4">
           <Link
-            href="https://sistema.gir.eco.br/register"
+            href="https://app.gir.eco.br/register"
             target="_blank"
             rel="noopener noreferrer"
             className="bg-primary hover:bg-primary/80 w-full rounded-lg px-6 sm:px-25 py-5 sm:py-6 text-center sm:text-xl font-semibold text-white duration-300 ease-in-out sm:w-auto"
