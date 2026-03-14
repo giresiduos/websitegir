@@ -128,7 +128,7 @@ const LeadsCaptureModal = () => {
             <div className="shadow-three dark:bg-gray-dark relative flex max-h-screen w-full flex-col overflow-y-auto rounded-lg border-0 bg-white outline-none focus:outline-none">
               <div className="flex items-start justify-between rounded-t px-10 pt-10">
                 <h3 className="text-2xl font-semibold text-black dark:text-white">
-                  Baixe o seu E-book grátis
+                  Adquira o E-book
                 </h3>
               </div>
 

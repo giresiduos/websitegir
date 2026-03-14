@@ -8,10 +8,10 @@ const Ebook = () => {
     <section id="resultados" className="relative z-10 py-20">
       <div className="container">
         <SectionTitle
-          title="Escolha um impacto positivo! Aprenda a fazer de forma simples a gestão de resíduos em cada cômodo de sua casa. Faça o download gratuito do nosso guia completo e descubra segredos que poucos conhecem."
+          title="Escolha um impacto positivo! Aprenda a fazer de forma simples a gestão de resíduos em cada cômodo de sua casa. Adquira agora mesmo o E-book e descubra os segredos que poucos conhecem."
           paragraph={
-            <Link href="/ebook" className="hover:text-primary">
-              Baixe nosso último e-book
+            <Link href="https://go.hotmart.com/U104904812G?dp=1" className="hover:text-primary">
+              Adquira agora e-book
             </Link>
           }
           center
@@ -39,10 +39,10 @@ const Ebook = () => {
           <div className="p-6">
             <h3>
               <Link
-                href="/ebook"
+                href="https://go.hotmart.com/U104904812G?dp=1"
                 className="hover:text-primary dark:hover:text-primary mb-4 block text-center text-xl font-bold text-black sm:text-2xl dark:text-white"
               >
-                Guia Prático - Destinação seletiva de resíduos no seu dia a dia
+                Descarte Inteligente: O Manual para um Lar Sustentável
               </Link>
             </h3>
 
@@ -59,7 +59,7 @@ const Ebook = () => {
 
             <div className="flex w-full flex-col items-center justify-center space-y-4 sm:w-auto sm:flex-row sm:space-y-0 sm:space-x-4">
               <Link
-                href="/ebook"
+                href="https://go.hotmart.com/U104904812G?dp=1"
                 className="bg-primary hover:bg-primary/80 w-full rounded-lg px-6 py-4 text-center text-lg font-semibold text-white duration-300 ease-in-out sm:w-auto"
               >
                 Mais detalhes
