@@ -16,7 +16,7 @@ export async function POST(request: Request) {
     const body = await request.json();
     const { name, email, phone, state } = body;
     const ebookUrl =
-      "https://drive.google.com/drive/folders/1mAgCaY5-RCbzL9iO6OSEGqC4TUjJwzM3";
+      "https://go.hotmart.com/U104904812G?dp=1";
 
     if (!name || !email || !state || !phone) {
       return NextResponse.json(
@@ -49,11 +49,11 @@ export async function POST(request: Request) {
     await transporter.sendMail({
       from: `"GIR" <${process.env.SMTP_FROM_EMAIL}>`,
       to: email,
-      subject: "Aqui está seu e-book!",
+      subject: "Aqui está o link para voce adquirir o seu e-book!",
       text: `
         Olá ${name},
 
-        Obrigado por baixar nosso e-book! Clique no link abaixo para acessar:
+        Obrigado pelo interesse no e-book! Clique no link abaixo para adquiri-lo:
 
         ${ebookUrl}
 
@@ -64,7 +64,7 @@ export async function POST(request: Request) {
       `,
       html: `
         <h2>Olá ${name},</h2>
-        <p>Obrigado por baixar nosso e-book! Clique no botão abaixo para acessar:</p>
+        <p>Obrigado pelo interesse no e-book! Clique no botão abaixo para adquiri-lo:</p>
         
         <div style="margin: 20px 0;">
           <a href="${ebookUrl}" style="background-color: #4CAF50; color: white; padding: 12px 20px; text-decoration: none; border-radius: 4px; font-weight: bold; display: inline-block;">
@@ -84,7 +84,7 @@ export async function POST(request: Request) {
     return NextResponse.json(
       {
         success: true,
-        message: "E-book enviado com sucesso para o seu email!",
+        message: "Link para adquirir o E-book enviado com sucesso para o seu email!",
       },
       { status: 200 },
     );
